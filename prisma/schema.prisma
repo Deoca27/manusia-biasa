@@ -12,3 +12,15 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+
+model tb_admin{
+  id Int @id @default(autoincrement())
+  username String @db.VarChar(50)
+  password String @db.VarChar(50)
+  status status
+}
+
+enum status{
+  Y
+  N
+}
