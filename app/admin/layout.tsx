@@ -16,13 +16,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-theme="lemonade">
+    <html lang="en" data-theme="lemonade" >
       <body>
         {/* area header */}
         <header>
           <div className="navbar bg-base-100">
             <div className="flex-1">
-              <a className="btn btn-ghost text-xl">daisyUI</a>
+              <Link href={"/admin"} className="btn btn-ghost text-xl">Admin Controller</Link>
+              <Link href={"/barang"} className="btn btn-ghost text-xl">Item Controller</Link>
+              
             </div>
             <div className="flex-none gap-2">
               <div className="form-control">
