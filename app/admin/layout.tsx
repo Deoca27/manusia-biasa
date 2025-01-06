@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-theme="lemonade" >
+    <html lang="en" data-theme="lemonade">
       <body>
         {/* area header */}
         <header>
