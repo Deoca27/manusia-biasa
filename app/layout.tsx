@@ -1,3 +1,6 @@
+// import file "globals.css"
+import "./globals.css"
+
 export const metadata = {
   title: 'katalog electronic',
   description: 'katalog alat electronic',
