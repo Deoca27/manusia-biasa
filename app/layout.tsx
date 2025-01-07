@@ -18,9 +18,11 @@ export default function RootLayout({
         <section>
         {children}
         </section>
-        
+
         {/* Area Footer */}
-        <footer></footer>
+        <footer>
+        Copyright &copy; 2025 - Manusia Biasa Team
+        </footer>
       </body>
     </html>
   )
