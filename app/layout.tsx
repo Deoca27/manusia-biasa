@@ -10,8 +10,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="lemonade">
-      <body>        
+      <body> 
+        {/* Area Header */}
+        <header></header>
+
+        {/* Area Conten */}
+        <section>
         {children}
+        </section>
+        
+        {/* Area Footer */}
+        <footer></footer>
       </body>
     </html>
   )
