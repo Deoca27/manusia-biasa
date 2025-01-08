@@ -13,8 +13,14 @@ export default function RootPage() {
               harga terbaik, dan fitur pencarian yang memudahkan Anda menemukan produk sesuai kebutuhan.
             </p>
           </div>
-
           <div className="w-1/2">
+            <div className="mb-6 text-right">
+              <input
+                type="text"
+                placeholder="Search products..."
+                className="input input-bordered w-full max-w-md pl-10"
+              />
+            </div>
             <Image
               src="/images/foto.png"
               alt="MacBook Pro 14"
@@ -27,7 +33,7 @@ export default function RootPage() {
         </div>
       </div>
       <div className="py-16 px-6">
-        <h2 className="text-5xl font-bold mb-12">Product</h2>
+        <h2 className="text-5xl font-bold mb-12 text-center">Product</h2>
         <div className="grid grid-cols-4 gap-6">
         </div>
       </div>
