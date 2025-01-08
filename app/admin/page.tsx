@@ -1,8 +1,22 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import { getData } from "../models/admin";
+
 export default function AdminPage() {
+  const [getValue, setValue] = useState({});
+
+  async function fetchData() {
+    setValue(await getData());
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, [])
+
   return (
     <>
+
       <table className='w-full shadow-md '>
         {/* judul tabel admin */}
         <thead >
@@ -13,22 +27,27 @@ export default function AdminPage() {
             <th className='w-5% text-center'>a</th>
           </tr>
         </thead>
-        <tbody>
-          <tr className="border border-slate-300 ">
-            <td className="p-2">
-              a
-            </td>
-            <td className="p-2">
-              b
-            </td>
-            <td className="p-2">
-              c
-            </td>
-            <td className="p-2 ">
-              c
-            </td>
-          </tr>
-        </tbody>
+
+       
+          <tbody>
+          {Object.values(getValue).map((data: any, index: number,) => (
+            <tr key={index} className="border border-slate-300 ">
+              <td className="p-2">
+                
+              </td>
+              <td className="p-2">
+                {data.username}
+              </td>
+              <td className="p-2">
+                {data.password}
+              </td>
+              <td className="p-2 ">
+              </td>
+            </tr>
+             ))}
+          </tbody>
+       
+
       </table>
 
     </>
