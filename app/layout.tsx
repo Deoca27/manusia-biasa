@@ -16,13 +16,13 @@ export default function RootLayout({
     <html lang="en" data-theme="lemonade">
       <body> 
         {/* Area Header */}
-        <header>
+        <header className="flex justify-between items-center px-5 py-3">
           <Link href={"/"}>Ecommerce</Link>
           <nav className="flex justify-end">
             <Link href={"/"} className="mr-2.5">Home</Link>
             <Link href={"/"} className="mx-2.5">About</Link>
             <Link href={"/"} className="mx-2.5">Products</Link>
-            <Link href={"/"} className="ml-2.5 mr-5">Contact</Link>
+            <Link href={"/"} className="ml-2.5">Contact</Link>
           </nav>
         </header>
 
