@@ -18,7 +18,7 @@ export default function RootLayout({
         {/* Area Header */}
         <header>
           <Link href={"/"}>Ecommerce</Link>
-          <nav>
+          <nav className="flex justify-end">
             <Link href={"/"}>Home</Link>
             <Link href={"/"}>About</Link>
             <Link href={"/"}>Products</Link>
