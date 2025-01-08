@@ -1,4 +1,5 @@
 // import file "globals.css"
+import Link from "next/link"
 import "./globals.css"
 
 export const metadata = {
@@ -15,7 +16,15 @@ export default function RootLayout({
     <html lang="en" data-theme="lemonade">
       <body> 
         {/* Area Header */}
-        <header></header>
+        <header>
+          <Link href={"/"}>Ecommerce</Link>
+          <nav>
+            <Link href={"/"}>Home</Link>
+            <Link href={"/"}>About</Link>
+            <Link href={"/"}>Products</Link>
+            <Link href={"/"}>Contact</Link>
+          </nav>
+        </header>
 
         {/* Area Conten */}
         <section>
