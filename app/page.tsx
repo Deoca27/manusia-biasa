@@ -14,6 +14,16 @@ export default function RootPage() {
           </p>
           </div>
         </div>
+        <div className="w-1/2">
+            <Image
+              src="/images/foto.png"
+              alt="MacBook Pro 14"
+              width={800}
+              height={500}
+              className="object-contain"
+              priority
+            />
+          </div>
       </div>
     </main>
   );
