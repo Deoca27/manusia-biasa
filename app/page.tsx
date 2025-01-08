@@ -5,16 +5,16 @@ export default function RootPage() {
     <main>
       {/* Hero Section */}
       <div className="relative bg-gray-900 text-white min-h-[600px] flex items-center">
-        <div className="container mx-auto px-6 py-12">
-        <div className="w-1/2">
-          <h1 className="text-6xl font-bold mb-6">Electronic Hub</h1>
-          <p className="text-gray-300 text-xl mb-8 max-w-xl">
-            Website katalog elektronik ini menyediakan berbagai pilihan produk elektronik terkini dengan informasi lengkap,
-            harga terbaik, dan fitur pencarian yang memudahkan Anda menemukan produk sesuai kebutuhan.
-          </p>
+        <div className="container mx-auto px-6 py-12 flex justify-between items-center">
+          <div className="w-1/2">
+            <h1 className="text-6xl font-bold mb-6">Electronic Hub</h1>
+            <p className="text-gray-300 text-xl mb-8 max-w-xl">
+              Website katalog elektronik ini menyediakan berbagai pilihan produk elektronik terkini dengan informasi lengkap,
+              harga terbaik, dan fitur pencarian yang memudahkan Anda menemukan produk sesuai kebutuhan.
+            </p>
           </div>
-        </div>
-        <div className="w-1/2">
+
+          <div className="w-1/2">
             <Image
               src="/images/foto.png"
               alt="MacBook Pro 14"
@@ -24,6 +24,7 @@ export default function RootPage() {
               priority
             />
           </div>
+        </div>
       </div>
       <div className="py-16 px-6">
         <h2 className="text-5xl font-bold mb-12">Product</h2>
