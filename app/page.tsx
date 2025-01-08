@@ -27,6 +27,8 @@ export default function RootPage() {
       </div>
       <div className="py-16 px-6">
         <h2 className="text-5xl font-bold mb-12">Product</h2>
+        <div className="grid grid-cols-4 gap-6">
+        </div>
       </div>
     </main>
   );
