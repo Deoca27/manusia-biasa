@@ -32,6 +32,8 @@ export default function AboutPage() {
                     </div>
                 </div>
             </div>
+            <div className="bg-gray-100 py-16 px-6">
+            </div>
         </>
     );
 }
