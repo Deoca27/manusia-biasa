@@ -20,7 +20,16 @@ model tb_admin{
   status status
 }
 
-enum status{
+model tb_barang{
+  id Int @id @default(autoincrement())
+  nama_barang String @db.VarChar(50)
+  deskripsi String @db.VarChar(100)
+  harga Float @db.Double
+  kategori String @db.VarChar(20)
+  status status
+}
+
+enum status {
   Y
   N
 }
