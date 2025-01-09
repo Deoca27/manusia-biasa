@@ -16,6 +16,11 @@ export default function AboutPage() {
             <div className="py-16 px-6">
                 <div className="container mx-auto grid md:grid-cols-2 gap-12">
                     <div className="bg-white p-8 rounded-lg shadow-lg">
+                        <h2 className="text-3xl font-bold mb-4 text-blue-600">Our Vision</h2>
+                        <p className="text-gray-600 text-lg">
+                            Menjadi platform katalog elektronik terdepan yang membantu konsumen membuat keputusan
+                            pembelian yang tepat melalui informasi produk yang komprehensif dan terpercaya.
+                        </p>
                     </div>
                 </div>
             </div>
