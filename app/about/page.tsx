@@ -25,6 +25,10 @@ export default function AboutPage() {
                     <div className="bg-white p-8 rounded-lg shadow-lg">
                         <h2 className="text-3xl font-bold mb-4 text-blue-600">Our Mission</h2>
                         <ul className="text-gray-600 text-lg space-y-4"></ul>
+                        <li> Menyediakan informasi produk elektronik terkini dan akurat</li>
+                        <li> Membantu konsumen membandingkan dan memilih produk terbaik</li>
+                        <li> Memberikan ulasan dan rekomendasi yang objektif</li>
+                        <li> Menghadirkan pengalaman pencarian produk yang mudah dan nyaman</li>
                     </div>
                 </div>
             </div>
