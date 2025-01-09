@@ -36,11 +36,14 @@ export default function AboutPage() {
                 <div className="container mx-auto">
                     <h2 className="text-4xl font-bold mb-12 text-center">Why Choose Us</h2>
                     <div className="grid md:grid-cols-3 gap-8">
-                        <div className="bg-white p-6 rounded-lg shadow-lg text-center"> 
-                        </div>
+                        <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span className="text-2xl text-white">🔍</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </>
-            );
+            </div>
+        </>
+    );
 }
