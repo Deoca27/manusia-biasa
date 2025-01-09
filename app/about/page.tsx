@@ -22,6 +22,10 @@ export default function AboutPage() {
                             pembelian yang tepat melalui informasi produk yang komprehensif dan terpercaya.
                         </p>
                     </div>
+                    <div className="bg-white p-8 rounded-lg shadow-lg">
+                        <h2 className="text-3xl font-bold mb-4 text-blue-600">Our Mission</h2>
+                        <ul className="text-gray-600 text-lg space-y-4"></ul>
+                    </div>
                 </div>
             </div>
         </>
