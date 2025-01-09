@@ -32,8 +32,9 @@ export default function AdminPage() {
           <tbody>
           {Object.values(getValue).map((data: any, index: number,) => (
             <tr key={index} className="border border-slate-300 ">
+              {/* penomoran */}
               <td className="p-2">
-                
+              {index + 1}
               </td>
               <td className="p-2">
                 {data.username}
