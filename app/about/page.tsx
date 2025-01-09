@@ -40,6 +40,10 @@ export default function AboutPage() {
                             <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <span className="text-2xl text-white">🔍</span>
                             </div>
+                            <h3 className="text-xl font-bold mb-3">Informasi Lengkap</h3>
+                            <p className="text-gray-600">
+                                Spesifikasi detail dan informasi komprehensif untuk setiap produk
+                            </p>
                         </div>
                     </div>
                 </div>
