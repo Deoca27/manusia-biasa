@@ -13,8 +13,10 @@ export default function AboutPage() {
                     </p>
                 </div>
             </div>
-             <div className="py-16 px-6">
+            <div className="py-16 px-6">
                 <div className="container mx-auto grid md:grid-cols-2 gap-12">
+                    <div className="bg-white p-8 rounded-lg shadow-lg">
+                    </div>
                 </div>
             </div>
         </>
