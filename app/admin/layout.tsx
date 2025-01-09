@@ -5,10 +5,7 @@ import "../globals.css"
 import "@fortawesome/fontawesome-svg-core/styles.css"
 
 
-export const metadata = {
-  title: 'katalog electronic',
-  description: 'katalog alat electronic',
-}
+
 
 export default function AdminLayout({
   children,
@@ -23,7 +20,7 @@ export default function AdminLayout({
         <div className="navbar bg-base-100">
           <div className="flex-1">
             <Link href={"/admin"} className="btn btn-ghost text-xl">Admin Controller</Link>
-            <Link href={"/barang"} className="btn btn-ghost text-xl">Item Controller</Link>
+            <Link href={"/admin/barang"} className="btn btn-ghost text-xl">Item Controller</Link>
           </div>
           <div className="flex-none gap-2">
             <div className="form-control">
@@ -55,9 +52,8 @@ export default function AdminLayout({
       </header>
 
       {/* ini content */}
-      <main className="m-8">
-        {children}
-      </main>
+      <section className="m-8">{children}</section>
+
     </div>
 
   )
