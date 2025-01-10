@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { getData } from "../models/admin";
+import Link from "next/link";
 
 export default function AdminPage() {
   const [getValue, setValue] = useState({});
@@ -46,8 +47,8 @@ export default function AdminPage() {
                 <div className="dropdown dropdown-bottom dropdown-end">
                   <div tabIndex={0} role="button" className="btn m-1">...</div>
                   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                    <li><a>Hapus</a></li>
-                    <li><a>Edit</a></li>
+                    <li><Link href={"/"}>Edit</Link></li>
+                    <li><Link href={"/"}>Hapus</Link></li>
                   </ul>
                 </div>
               </td>
