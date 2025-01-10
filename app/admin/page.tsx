@@ -24,17 +24,17 @@ export default function AdminPage() {
             <th className='w-5% text-start p-2'>No</th>
             <th className='w-1/2 text-start p-2'>Nama</th>
             <th className='w-40% text-start p-2'>password</th>
-            <th className='w-5% text-center'>a</th>
+            <th className='w-5% text-center'></th>
           </tr>
         </thead>
 
-       
-          <tbody>
+
+        <tbody>
           {Object.values(getValue).map((data: any, index: number,) => (
             <tr key={index} className="border border-slate-300 ">
               {/* penomoran */}
               <td className="p-2">
-              {index + 1}
+                {index + 1}
               </td>
               <td className="p-2">
                 {data.username}
@@ -42,12 +42,19 @@ export default function AdminPage() {
               <td className="p-2">
                 {data.password}
               </td>
-              <td className="p-2 ">
+              <td className="text-right pr-4 px-2">
+                <div className="dropdown dropdown-bottom">
+                  <div tabIndex={0} role="button" className="btn m-1">Click</div>
+                  <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                  </ul>
+                </div>
               </td>
             </tr>
-             ))}
-          </tbody>
-       
+          ))}
+        </tbody>
+
 
       </table>
 
