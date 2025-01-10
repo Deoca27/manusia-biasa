@@ -20,13 +20,13 @@ export default function AdminPage() {
 
   return (
     <>
-      <div className="grid grid-cols-10 gap-4 items-center">
+      <div className="grid grid-cols-10 gap-4 items-center pb-2">
                 <div className=" col-span-3"><input type="text" placeholder="Search" className="input input-bordered w-full "
                     onChange={(e) => {
                     }} /></div>
             </div>
 
-      <table className='w-full shadow-md '>
+      <table className='w-full shadow-md pt-2'>
         {/* judul tabel admin */}
         <thead >
           <tr className="border border-slate-300 ">
