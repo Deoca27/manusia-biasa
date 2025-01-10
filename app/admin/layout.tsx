@@ -50,7 +50,7 @@ export default function AdminLayout({
       </header>
 
       {/* ini content */}
-      <section className="m-8">{children}</section>
+      <section className="mx-8 my-4">{children}</section>
 
     </div>
 
