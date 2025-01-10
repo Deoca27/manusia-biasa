@@ -20,6 +20,11 @@ export default function AdminPage() {
 
   return (
     <>
+      <div className="grid grid-cols-10 gap-4 items-center">
+                <div className=" col-span-3"><input type="text" placeholder="Search" className="input input-bordered w-full "
+                    onChange={(e) => {
+                    }} /></div>
+            </div>
 
       <table className='w-full shadow-md '>
         {/* judul tabel admin */}
@@ -50,7 +55,7 @@ export default function AdminPage() {
                 <div className="dropdown dropdown-bottom dropdown-end">
                   <div tabIndex={0} role="button" className="btn m-1" title="Aksi">...</div>
                   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                    <li><Link href={"/"}><FontAwesomeIcon icon={faPenToSquare}/>Edit</Link></li>
+                    <li><Link href={"/"}><FontAwesomeIcon icon={faPenToSquare} />Edit</Link></li>
                     <li><Link href={"/"}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
                   </ul>
                 </div>
