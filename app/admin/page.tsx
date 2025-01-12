@@ -1,11 +1,24 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getData } from "../models/admin";
+import { getData, setUpdateStatus } from "../models/admin";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPenToSquare } from "@fortawesome/free-regular-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+
+//buat fungsi untuk dialog hapus
+async function setDelete(username: string) {
+  // alert("Hapus Data");
+  if(confirm(`apakah Admin ${username} Ingin Dihapus`) == true)
+  {
+    await setUpdateStatus(username)
+    alert(`Admin ${username} Berhasil Dihapus`);
+    // reload otomatis
+    location.reload();
+  }
+}
+
 
 export default function AdminPage() {
   const [getValue, setValue] = useState({});
@@ -56,7 +69,7 @@ export default function AdminPage() {
                   <div tabIndex={0} role="button" className="btn m-1" title="Aksi">...</div>
                   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                     <li><Link href={"/"}><FontAwesomeIcon icon={faPenToSquare} />Edit</Link></li>
-                    <li><Link href={"/"}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
+                    <li><Link href={"/"} onClick={() => {setDelete(data.username)}}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
                   </ul>
                 </div>
               </td>
