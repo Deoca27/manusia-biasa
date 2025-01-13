@@ -91,6 +91,9 @@ export default function AboutPage() {
                     </div>
                 </div>
             </div>
+            <div className="py-16 px-6">
+                
+            </div>
             
         </>
     );
