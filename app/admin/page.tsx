@@ -37,10 +37,11 @@ export default function AdminPage() {
           onChange={(e) => {
           }} /></div>
 
-        <button className="btn col-end-12">
-        <FontAwesomeIcon icon={faPlus} />
-          Add
-        </button>
+        <Link href={"/admin/add"} className="btn col-end-12"> 
+        <FontAwesomeIcon icon={faPlus}/>
+        Add 
+        </Link>
+
       </div>
 
       <table className='w-full shadow-md pt-2'>
