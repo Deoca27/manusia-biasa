@@ -108,6 +108,9 @@ export default function AboutPage() {
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">{member.name}</h3>
                                 <p className="text-gray-600">{member.position}</p>
+                                <div className="flex justify-center space-x-4 mt-4">
+                                    
+                                </div>
                             </div>
                         ))}
                     </div>
