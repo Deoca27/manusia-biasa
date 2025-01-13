@@ -99,7 +99,7 @@ export default function AboutPage() {
                         {teamMembers.map((member) => (
                             <div key={member.id} className="text-center">
                                 <div className="relative w-48 h-48 mx-auto mb-4">
-                                <Image
+                                    <Image
                                         src={member.image}
                                         alt={member.name}
                                         fill
@@ -109,7 +109,10 @@ export default function AboutPage() {
                                 <h3 className="text-xl font-bold mb-2">{member.name}</h3>
                                 <p className="text-gray-600">{member.position}</p>
                                 <div className="flex justify-center space-x-4 mt-4">
-                                    
+                                    <a href={member.Instagram} className="text-blue-600 hover:text-blue-800 flex items-center gap-2">
+                                        <Instagram size={20} />
+                                        Instagram
+                                    </a>
                                 </div>
                             </div>
                         ))}
