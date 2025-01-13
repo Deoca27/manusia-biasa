@@ -93,14 +93,16 @@ export default function AboutPage() {
             </div>
             <div className="py-16 px-6">
                 <div className="container mx-auto">
-                <h2 className="text-4xl font-bold mb-12 text-center">Our Team</h2>
-                <div className="grid md:grid-cols-3 gap-8">
-                {teamMembers.map((member) => ( 
-                    <div key={member.id} className="text-center">
-                        
+                    <h2 className="text-4xl font-bold mb-12 text-center">Our Team</h2>
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {teamMembers.map((member) => (
+                            <div key={member.id} className="text-center">
+                                <div className="relative w-48 h-48 mx-auto mb-4">
+
+                                </div>
+                            </div>
+                        ))}
                     </div>
-                ))}
-                </div>
                 </div>
             </div>
 
