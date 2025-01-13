@@ -1,6 +1,8 @@
 import React from 'react'
 
 export default function AboutPage() {
+
+    
     return (
         <>
             {/* Hero Section */}
@@ -12,7 +14,7 @@ export default function AboutPage() {
                         Kami berkomitmen untuk menyediakan informasi lengkap dan akurat tentang produk-produk terbaru di dunia teknologi.
                     </p>
                 </div>
-            </div> 
+            </div>
             <div className="py-16 px-6">
                 <div className="container mx-auto grid md:grid-cols-2 gap-12">
                     <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -54,9 +56,19 @@ export default function AboutPage() {
                                 Ulasan objektif dan rating produk dari pengguna yang terverifikasi
                             </p>
                         </div>
+                        <div className="bg-white p-6 rounded-lg shadow-lg text-center">
+                            <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <span className="text-2xl text-white">📱</span>
+                            </div>
+                            <h3 className="text-xl font-bold mb-3">Update Terkini</h3>
+                            <p className="text-gray-600">
+                                Informasi terbaru tentang produk elektronik dan teknologi terkini
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
+            
         </>
     );
 }
