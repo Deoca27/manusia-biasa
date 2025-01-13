@@ -10,8 +10,7 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 //buat fungsi untuk dialog hapus
 async function setDelete(username: string) {
   // alert("Hapus Data");
-  if(confirm(`apakah Admin ${username} Ingin Dihapus`) == true)
-  {
+  if (confirm(`apakah Admin ${username} Ingin Dihapus`) == true) {
     await setUpdateStatus(username)
     alert(`Admin ${username} Berhasil Dihapus`);
     // reload otomatis
@@ -34,10 +33,26 @@ export default function AdminPage() {
   return (
     <>
       <div className="grid grid-cols-10 gap-4 items-center pb-2">
-                <div className=" col-span-3"><input type="text" placeholder="Search" className="input input-bordered w-full "
-                    onChange={(e) => {
-                    }} /></div>
-            </div>
+        <div className=" col-span-3"><input type="text" placeholder="Search" className="input input-bordered w-full "
+          onChange={(e) => {
+          }} /></div>
+
+<button className="btn">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-6 w-6"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor">
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+  </svg>
+  Button
+</button>
+      </div>
 
       <table className='w-full shadow-md pt-2'>
         {/* judul tabel admin */}
@@ -69,7 +84,7 @@ export default function AdminPage() {
                   <div tabIndex={0} role="button" className="btn m-1" title="Aksi">...</div>
                   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                     <li><Link href={"/"}><FontAwesomeIcon icon={faPenToSquare} />Edit</Link></li>
-                    <li><Link href={"/"} onClick={() => {setDelete(data.username)}}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
+                    <li><Link href={"/"} onClick={() => { setDelete(data.username) }}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
                   </ul>
                 </div>
               </td>
