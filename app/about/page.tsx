@@ -25,7 +25,7 @@ export default function AboutPage() {
             Instagram: "https://www.instagram.com/jhoshe_maechel?igsh=MWEwamx1ZmIyN2hueg==",
         },
     ];
-    
+
     return (
         <>
             {/* Hero Section */}
@@ -92,9 +92,11 @@ export default function AboutPage() {
                 </div>
             </div>
             <div className="py-16 px-6">
-                
+                <div className="container mx-auto">
+                    
+                </div>
             </div>
-            
+
         </>
     );
 }
