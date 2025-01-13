@@ -26,3 +26,25 @@ export const setUpdateStatus = async(username: string) => {
     },
   })
 }
+
+// buat fungsi check data mahasiswa (npm)
+export const checkData = async(username: string) => {
+  const check = await prisma.tb_admin.findMany({
+    where: {
+      username: username,
+      
+    },
+  });
+  return check;
+};
+
+// buat fungsi untuk simpan data mahasiswa
+export const SaveData = async (username: string, password: string) => {
+  await prisma.tb_admin.create({
+      data: {
+        username: username,
+        password: password,
+          status: 'Y',
+      },
+  })
+}

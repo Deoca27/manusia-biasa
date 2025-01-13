@@ -1,14 +1,40 @@
 "use client";
 
+import { checkData, SaveData } from "@/app/models/admin";
 import Link from "next/link";
 import { useState } from "react";
 
 export default function AddPage() {
     const [showPassword, setShowPassword] = useState(false);
 
+    //buat hook (use state)
+    const [getUsername, setUsername] = useState("");
+    const [getPassword, setPassword] = useState("");
+
+    //buat hook (usestate)
+    //untuk respon hasil fungsi "checkData"
+    const [getValue, setValue] = useState({});
+
+    //buat fungsi untuk respon fungsi "checkData"
+    const getCheckData = async (username: string) => {
+        setValue(await checkData(username))
+    }
+
+    //simpan data
+    const setSaveData = async() => {
+        (getUsername == "" || getPassword == "")
+        ? alert("Lengkapi seluruh data")
+        : (Object.values(getValue).length == 0)
+            ? [await SaveData(getUsername, getPassword),
+                alert("Berhasil simpan"),
+                location.reload()
+            ]
+            : alert ("NPM Sudah ada")
+    };
+
     return (
         <>
-            <div className="grid grid-cols-10 gap-4 ">
+            <div className="grid grid-cols-10 gap-4">
                 <label className="input input-bordered flex items-center col-start-4 col-span-4">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -18,8 +44,10 @@ export default function AddPage() {
                         <path
                             d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
                     </svg>
-                    <input type="text" className="grow" placeholder="Username"
+                    <input type="text" className="grow" placeholder=" Username"
                         onChange={(e) => {
+                            setUsername(e.target.value);
+                            getCheckData(e.target.value);
                         }} />
                 </label>
 
@@ -37,8 +65,9 @@ export default function AddPage() {
                     <input
                         type={showPassword ? "text" : "password"}
                         className="grow"
-                        placeholder="Password"
+                        placeholder=" Password"
                         onChange={(e) => {
+                            setPassword(e.target.value);
                         }}
                     />
                     <button
@@ -66,7 +95,7 @@ export default function AddPage() {
                     </button>
                 </label>
                 
-                    <button className="btn col-end-7">Simpan</button>
+                    <button className="btn col-end-7" onClick={setSaveData}>Simpan</button>
                     <Link href={"/admin"} className="btn btn-neutral">Batal</Link>
                 
             </div>
