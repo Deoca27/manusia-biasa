@@ -10,6 +10,20 @@ export default function AboutPage() {
             image: "/images/poto.png",
             Instagram: "https://www.instagram.com/jhoshe_maechel?igsh=MWEwamx1ZmIyN2hueg==",
         },
+        {
+            id: 1,
+            name: "Rendika Yoga Pamungkas",
+            position: "Project Manager",
+            image: "/images/poto.png",
+            Instagram: "https://www.instagram.com/jhoshe_maechel?igsh=MWEwamx1ZmIyN2hueg==",
+        },
+        {
+            id: 1,
+            name: "Deo Cahyo Anggoro",
+            position: "Project Manager",
+            image: "/images/poto.png",
+            Instagram: "https://www.instagram.com/jhoshe_maechel?igsh=MWEwamx1ZmIyN2hueg==",
+        },
     ];
     
     return (
