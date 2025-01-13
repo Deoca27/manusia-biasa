@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 
 export default function AddPage() {
@@ -64,6 +65,9 @@ export default function AddPage() {
                         )}
                     </button>
                 </label>
+                <div className=""><button className="btn">Button</button>
+                    <Link href={"/admin"} className="btn btn-neutral">Button</Link>
+                </div>
             </div>
         </>
     );
