@@ -39,7 +39,7 @@ export default function AdminPage() {
 
         <Link href={"/admin/add"} className="btn col-end-12"> 
         <FontAwesomeIcon icon={faPlus}/>
-        Add 
+        Tambah 
         </Link>
 
       </div>

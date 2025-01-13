@@ -66,8 +66,8 @@ export default function AddPage() {
                     </button>
                 </label>
                 
-                    <button className="btn col-end-7">Button</button>
-                    <Link href={"/admin"} className="btn btn-neutral">Button</Link>
+                    <button className="btn col-end-7">Simpan</button>
+                    <Link href={"/admin"} className="btn btn-neutral">Batal</Link>
                 
             </div>
         </>
