@@ -12,14 +12,14 @@ export default function AboutPage() {
             Instagram: "https://www.instagram.com/jhoshe_maechel?igsh=MWEwamx1ZmIyN2hueg==",
         },
         {
-            id: 1,
+            id: 2,
             name: "Rendika Yoga Pamungkas",
             position: "Project Manager",
             image: "/images/poto.png",
             Instagram: "https://www.instagram.com/jhoshe_maechel?igsh=MWEwamx1ZmIyN2hueg==",
         },
         {
-            id: 1,
+            id: 3,
             name: "Deo Cahyo Anggoro",
             position: "Project Manager",
             image: "/images/poto.png",
