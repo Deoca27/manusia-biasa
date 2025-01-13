@@ -1,7 +1,15 @@
+import { Instagram } from 'lucide-react';
 import React from 'react'
 
 export default function AboutPage() {
     const teamMembers = [
+        {
+            id: 1,
+            name: "Jhoshe Machael",
+            position: "Project Manager",
+            image: "/images/poto.png",
+            Instagram: "https://www.instagram.com/jhoshe_maechel?igsh=MWEwamx1ZmIyN2hueg==",
+        },
     ];
     
     return (
