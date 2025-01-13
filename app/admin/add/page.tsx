@@ -3,8 +3,8 @@
 export default function AddPage() {
     return (
         <>
-        <div>
-            <label className="input input-bordered flex items-center gap-2">
+        <div className="grid grid-cols-10 gap-4 items-center">
+            <label className="input input-bordered flex items-center gap-2 col-start-4 col-span-4">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 16 16"
@@ -15,7 +15,7 @@ export default function AddPage() {
                 </svg>
                 <input type="text" className="grow" placeholder="Username" />
             </label>
-            <label className="input input-bordered flex items-center gap-2">
+            <label className="input input-bordered flex items-center gap-2 col-start-4 col-span-4">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 16 16"
