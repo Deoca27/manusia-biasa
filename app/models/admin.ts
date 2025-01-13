@@ -14,3 +14,15 @@ export async function getData() {
     })
     return admin;
   }
+
+// function setDelete
+export const setUpdateStatus = async(username: string) => {
+  await prisma.tb_admin.updateMany({
+    where: {
+      username: username,
+    },
+    data: {
+      status: 'N',
+    },
+  })
+}

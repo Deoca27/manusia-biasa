@@ -20,9 +20,9 @@ export default function RootLayout({
           <Link href={"/"}>Ecommerce</Link>
           <nav className="flex justify-end">
             <Link href={"/"} className="mr-2.5">Home</Link>
-            <Link href={"/"} className="mx-2.5">About</Link>
+            <Link href={"/about"} className="mx-2.5">About</Link>
             <Link href={"/"} className="mx-2.5">Products</Link>
-            <Link href={"/"} className="ml-2.5">Contact</Link>
+            <Link href={"/contact"} className="ml-2.5">Contact</Link>
           </nav>
         </header>
 

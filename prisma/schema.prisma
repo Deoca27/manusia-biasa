@@ -26,6 +26,7 @@ model tb_barang{
   deskripsi String @db.VarChar(100)
   harga Float @db.Double
   kategori String @db.VarChar(20)
+  link_product String @db.VarChar(100)
   status status
 }
 
