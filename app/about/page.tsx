@@ -1,5 +1,6 @@
 import { Instagram } from 'lucide-react';
 import React from 'react'
+import Image from 'next/image'
 
 export default function AboutPage() {
     const teamMembers = [
