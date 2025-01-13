@@ -98,7 +98,12 @@ export default function AboutPage() {
                         {teamMembers.map((member) => (
                             <div key={member.id} className="text-center">
                                 <div className="relative w-48 h-48 mx-auto mb-4">
-
+                                <Image
+                                        src={member.image}
+                                        alt={member.name}
+                                        fill
+                                        className="rounded-full object-cover"
+                                    />
                                 </div>
                             </div>
                         ))}
