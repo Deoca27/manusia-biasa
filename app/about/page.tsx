@@ -93,7 +93,7 @@ export default function AboutPage() {
             </div>
             <div className="py-16 px-6">
                 <div className="container mx-auto">
-                    
+                <h2 className="text-4xl font-bold mb-12 text-center">Our Team</h2>
                 </div>
             </div>
 
