@@ -6,4 +6,7 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient ();
 
 // buat fungsi untuk ambil data barang
-export async function getData() {}
+export async function getData() {
+  // buat variable "barang"
+  const barang = await prisma.tb_barang.findMany({});
+}
