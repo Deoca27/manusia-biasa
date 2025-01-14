@@ -21,6 +21,14 @@ export default function ProductPage() {
   return (
     <div>
       <title>Product</title>
+      {/* menampilkan data barang */}
+      {Object.values(getValue).map((data: any, index: number) => (
+            <div key={index}>
+              <div>
+                {data.nama_barang} - {data.deskripsi} - {data.harga}
+              </div>
+            </div>
+          ))}
     </div>
   )
 }
