@@ -8,5 +8,9 @@ const prisma = new PrismaClient ();
 // buat fungsi untuk ambil data barang
 export async function getData() {
   // buat variable "barang"
-  const barang = await prisma.tb_barang.findMany({});
+  const barang = await prisma.tb_barang.findMany({
+    where: {
+      status: "Y",
+    },   
+  });
 }
