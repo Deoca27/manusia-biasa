@@ -16,10 +16,10 @@ export default function AdminLayout({
       <aside className="w-60 bg-base-100 p-4 shadow-md flex flex-col justify-between">
         <ul className="menu">
           <li>
-            <Link href="/admin" className="btn btn-ghost">Admin Controller</Link>
+            <Link href="/admin/admin_controller" className="btn btn-ghost">Admin Controller</Link>
           </li>
           <li>
-            <Link href="/admin/barang" className="btn btn-ghost">Item Controller</Link>
+            <Link href="/admin/item_controller" className="btn btn-ghost">Item Controller</Link>
           </li>
         </ul>
         <div className="mt-auto mb-8">

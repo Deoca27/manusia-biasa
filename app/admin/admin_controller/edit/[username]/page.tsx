@@ -120,7 +120,7 @@ export default function EditPage({ params }: { params: { username: string } }) {
                     </label>
 
                     <button className="btn col-end-7" onClick={editData}>Simpan</button>
-                    <Link href={"/admin"} className="btn btn-neutral">Batal</Link>
+                    <Link href={"/admin/admin_controller"} className="btn btn-neutral">Batal</Link>
 
                 </div>
             ))}

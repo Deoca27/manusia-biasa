@@ -37,7 +37,7 @@ export default function AdminPage() {
           onChange={(e) => {
           }} /></div>
 
-        <Link href={"/admin/add"} className="btn col-end-12"> 
+        <Link href={"/admin/admin_controller/add"} className="btn col-end-12"> 
         <FontAwesomeIcon icon={faPlus}/>
         Tambah 
         </Link>
@@ -73,7 +73,7 @@ export default function AdminPage() {
                 <div className="dropdown dropdown-bottom dropdown-end">
                   <div tabIndex={0} role="button" className="btn m-1" title="Aksi">...</div>
                   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                    <li><Link href={"/"}><FontAwesomeIcon icon={faPenToSquare} />Edit</Link></li>
+                    <li><Link href={`/admin/admin_controller/edit/${btoa(data.username)}`}><FontAwesomeIcon icon={faPenToSquare} />Edit</Link></li>
                     <li><Link href={"/"} onClick={() => { setDelete(data.username) }}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
                   </ul>
                 </div>

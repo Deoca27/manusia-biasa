@@ -96,7 +96,7 @@ export default function AddPage() {
                 </label>
                 
                     <button className="btn col-end-7" onClick={setSaveData}>Simpan</button>
-                    <Link href={"/admin"} className="btn btn-neutral">Batal</Link>
+                    <Link href={"/admin/admin_controller"} className="btn btn-neutral">Batal</Link>
                 
             </div>
         </>
