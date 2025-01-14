@@ -14,6 +14,8 @@ export default function ProductPage() {
   }, []);
   
   return (
-    <div>ProductPage</div>
+    <div>
+      <title>Product</title>
+    </div>
   )
 }
