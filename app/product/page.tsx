@@ -8,6 +8,10 @@ export default function ProductPage() {
     const data = await getData();
     setValue(data);
   }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
   
   return (
     <div>ProductPage</div>
