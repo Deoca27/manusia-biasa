@@ -34,7 +34,7 @@ export default function AddPage() {
 
     return (
         <>
-            <div className="grid grid-cols-10 gap-4">
+            <div className="grid grid-cols-10 gap-4 mt-16">
                 <label className="input input-bordered flex items-center col-start-4 col-span-4">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
