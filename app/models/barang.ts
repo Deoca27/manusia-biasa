@@ -13,4 +13,6 @@ export async function getData() {
       status: "Y",
     },   
   });
+  
+  return barang;
 }
