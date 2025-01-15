@@ -57,7 +57,7 @@ export default function EditPage({ params }: { params: { username: string } }) {
 
     return (
         <>
-        <div className="text-center">EDIT ADMIN</div>
+        <div className="text-center font-extrabold">EDIT ADMIN</div>
             {Object.values(getValue)?.map((data: any, index: number) => (
                 <div key={index} className="grid grid-cols-10 gap-4 mt-16">
                     <label className="input input-bordered flex items-center col-start-4 col-span-4">
