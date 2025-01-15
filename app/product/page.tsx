@@ -45,7 +45,7 @@ export default function ProductPage() {
               </p>
               {/* Harga */}
               <p>
-                Rp {data.harga}
+                Rp {data.harga.toLocaleString("id-ID")}
               </p>
             </div>
           </div>
