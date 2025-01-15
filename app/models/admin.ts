@@ -11,7 +11,7 @@ export async function getData() {
     where: {
       status: "Y",
     },
-  })
+  });
   return admin;
 }
 
@@ -78,3 +78,4 @@ export const setUpdateData = async (username: string, password: string, username
   });
 
 }
+
