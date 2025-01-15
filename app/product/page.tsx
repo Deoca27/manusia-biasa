@@ -34,6 +34,11 @@ export default function ProductPage() {
               height={300}
               />
             </div>
+            <div>
+              <h2>
+                {data.nama_barang}
+              </h2>
+            </div>
           </div>
         ))}
       </div>
