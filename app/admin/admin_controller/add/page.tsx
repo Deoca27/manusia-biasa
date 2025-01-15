@@ -26,7 +26,7 @@ export default function AddPage() {
         ? alert("Lengkapi seluruh data")
         : (Object.values(getValue).length == 0)
             ? [await SaveData(getUsername, getPassword),
-                alert("Berhasil simpan"),
+                alert("Berhasil tambah data"),
                 location.reload()
             ]
             : alert ("NPM Sudah ada")
@@ -34,6 +34,7 @@ export default function AddPage() {
 
     return (
         <>
+         <div className="">TAMBAH ADMIN</div>
             <div className="grid grid-cols-10 gap-4 mt-16">
                 <label className="input input-bordered flex items-center col-start-4 col-span-4">
                     <svg

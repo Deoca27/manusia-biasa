@@ -75,7 +75,7 @@ export default function AdminPage() {
                   <div tabIndex={0} role="button" className="btn m-1" title="Aksi">...</div>
                   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                     <li><Link href={`/admin/admin_controller/edit/${btoa(data.username)}`}><FontAwesomeIcon icon={faPenToSquare} />Edit</Link></li>
-                    <li><Link href={"/"} onClick={() => { setDelete(data.username) }}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
+                    <li><Link href={"/admin/admin_controller"} onClick={() => { setDelete(data.username) }}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
                   </ul>
                 </div>
               </td>
