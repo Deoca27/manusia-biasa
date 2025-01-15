@@ -35,9 +35,14 @@ export default function ProductPage() {
               />
             </div>
             <div>
+              {/* Nama Barang */}
               <h2>
                 {data.nama_barang}
               </h2>
+              {/* Deskripsi */}
+              <p>
+                {data.deskripsi}
+              </p>
             </div>
           </div>
         ))}
