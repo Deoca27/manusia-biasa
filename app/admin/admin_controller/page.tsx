@@ -32,6 +32,7 @@ export default function AdminPage() {
 
   return (
     <>
+    <div>tabel admin</div>
       <div className="grid grid-cols-10 gap-4 items-center pb-2">
         <div className=" col-start-1 col-end-4"><input type="text" placeholder="Search" className="input input-bordered w-full "
           onChange={(e) => {
