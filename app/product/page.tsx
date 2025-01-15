@@ -17,18 +17,21 @@ export default function ProductPage() {
     // panggil fungsi "getData"
     fetchData();
   }, []);
-  
+
   return (
     <div>
       <title>Product</title>
-      {/* menampilkan data barang */}
-      {getValue.map((data: any, index: number) => (
-            <div key={index}>
-              <div>
-                {data.nama_barang} - {data.deskripsi} - {data.harga}
-              </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+        {/* menampilkan data barang */}
+        {getValue.map((data: any, index: number) => (
+          <div key={index}>
+            <div className="bg-blue-700">
+              test
+              {/* {data.nama_barang} - {data.deskripsi} - {data.harga} */}
             </div>
-          ))}
+          </div>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
