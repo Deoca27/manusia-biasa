@@ -43,6 +43,10 @@ export default function ProductPage() {
               <p>
                 {data.deskripsi}
               </p>
+              {/* Harga */}
+              <p>
+                Rp {data.harga}
+              </p>
             </div>
           </div>
         ))}
