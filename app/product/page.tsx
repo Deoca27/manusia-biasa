@@ -25,7 +25,7 @@ export default function ProductPage() {
         {/* menampilkan data barang */}
         {getValue.map((data: any, index: number) => (
           <div key={index}>
-            <div className="w-full">
+            <div className="w-full h-48">
               test
             </div>
           </div>
