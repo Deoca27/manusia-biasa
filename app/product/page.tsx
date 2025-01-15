@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { getData } from "../models/barang";
+import Image from "next/image";
 
 export default function ProductPage() {
   //buat hook dengan "use  state"
@@ -26,7 +27,12 @@ export default function ProductPage() {
         {getValue.map((data: any, index: number) => (
           <div key={index}>
             <div className="w-full h-48 bg-gray-100 flex items-center justify-center border-b border-gray-200">
-              test
+              <Image
+              src="/images/foto.png" 
+              alt="Deskripsi Gambar" 
+              width={500} 
+              height={300}
+              />
             </div>
           </div>
         ))}
