@@ -32,6 +32,7 @@ export default function ProductPage() {
               alt={data.nama_barang}
               width={500} 
               height={300}
+              priority
               />
             </div>
             <div>
