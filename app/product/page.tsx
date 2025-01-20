@@ -56,7 +56,7 @@ export default function ProductPage() {
               <Link
                 href={data.link_product || "#"}
                 target="_blank"
-                className="bg-blue-600"
+                className="bg-blue-600 text-white"
               >
                 Kunjungi
               </Link>
