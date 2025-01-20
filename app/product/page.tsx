@@ -41,7 +41,7 @@ export default function ProductPage() {
                 {data.nama_barang}
               </h2>
               {/* Deskripsi */}
-              <p>
+              <p className="text-gray-600 text-sm">
                 {data.deskripsi}
               </p>
               {/* Harga */}
