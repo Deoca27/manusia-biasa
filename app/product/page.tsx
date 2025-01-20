@@ -35,7 +35,7 @@ export default function ProductPage() {
               priority
               />
             </div>
-            <div>
+            <div className="p-3 text-center">
               {/* Nama Barang */}
               <h2>
                 {data.nama_barang}
