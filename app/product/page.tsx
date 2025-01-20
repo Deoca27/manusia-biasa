@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { getData } from "../models/barang";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProductPage() {
   //buat hook dengan "use  state"
@@ -51,6 +52,12 @@ export default function ProductPage() {
               <p className="text-base font-medium text-blue-500">
                 Rp {data.harga.toLocaleString("id-ID")}
               </p>
+              {/* Tombol Kunjungi */}
+              <Link
+                href={data.link_product || "#"}
+              >
+                Kunjungi
+              </Link>
             </div>
           </div>
         ))}
