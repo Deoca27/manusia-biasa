@@ -25,7 +25,10 @@ export default function ProductPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
         {/* menampilkan data barang */}
         {getValue.map((data: any, index: number) => (
-          <div key={index}>
+          <div 
+          key={index}
+          className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+          >
             <div className="w-full h-48 bg-gray-100 flex items-center justify-center border-b border-gray-200">
               <Image
               src="/images/foto.png" 
