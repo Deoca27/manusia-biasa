@@ -37,7 +37,7 @@ export default function ProductPage() {
             </div>
             <div className="p-3 text-center">
               {/* Nama Barang */}
-              <h2>
+              <h2 className="text-lg font-semibold text-gray-800">
                 {data.nama_barang}
               </h2>
               {/* Deskripsi */}
