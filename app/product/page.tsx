@@ -55,6 +55,7 @@ export default function ProductPage() {
               {/* Tombol Kunjungi */}
               <Link
                 href={data.link_product || "#"}
+                target="_blank"
               >
                 Kunjungi
               </Link>
