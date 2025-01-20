@@ -45,7 +45,7 @@ export default function ProductPage() {
                 {data.deskripsi}
               </p>
               {/* Harga */}
-              <p>
+              <p className="text-base font-medium text-blue-500">
                 Rp {data.harga.toLocaleString("id-ID")}
               </p>
             </div>
