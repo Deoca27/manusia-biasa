@@ -4,6 +4,10 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 export default function RootPage() {
+  // buat hook
+  // hook dengan "use  state"
+  const [getValue, setValue] = useState({});
+
   return (
     <main>
       {/* Hero Section */}
