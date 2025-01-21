@@ -16,6 +16,7 @@ model tb_admin {
 
 model tb_barang {
   id           Int    @id @default(autoincrement())
+  image_url    String  @db.VarChar(255) @default("")
   nama_barang  String @db.VarChar(50)
   deskripsi    String @db.VarChar(100)
   harga        Float
