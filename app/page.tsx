@@ -15,7 +15,10 @@ export default function RootPage() {
   }
 
   // hook dengan "use effect"
-  useEffect(() => {}, []);
+  useEffect(() => {
+    // panggil fungsi "getData"
+    fetchData();
+  }, []);
 
   return (
     <main>
