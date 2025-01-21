@@ -32,15 +32,15 @@ export default function AdminPage() {
 
   return (
     <>
-    <div className="text-center pb-4 font-extrabold text-2xl">TABEL ADMIN</div>
+      <div className="text-center pb-4 font-extrabold text-2xl">TABEL ADMIN</div>
       <div className="grid grid-cols-10 gap-4 items-center pb-2">
         <div className=" col-start-1 col-end-4"><input type="text" placeholder="Search" className="input input-bordered w-full "
           onChange={(e) => {
           }} /></div>
 
-        <Link href={"/admin/admin_controller/add"} className="btn col-end-12"> 
-        <FontAwesomeIcon icon={faPlus}/>
-        Tambah 
+        <Link href={"/admin/admin_controller/add"} className="btn col-end-12">
+          <FontAwesomeIcon icon={faPlus} />
+          Tambah
         </Link>
 
       </div>
