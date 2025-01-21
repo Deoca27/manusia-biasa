@@ -9,6 +9,11 @@ export default function RootPage() {
   // hook dengan "use  state"
   const [getValue, setValue] = useState({});
 
+  // buat fungsi untuk panggil "getData"
+  async function fetchData() {
+    setValue(await getData());
+  }
+
   return (
     <main>
       {/* Hero Section */}
