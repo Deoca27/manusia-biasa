@@ -25,7 +25,7 @@ export default function BarangPage() {
             <th className="w-5% text-start p-2">No</th>
             <th className="w-15% text-start p-2">Gambar</th>
             <th className="w-15% text-start p-2">Nama Barang</th>
-            <th className="w-25% text-start">Deskripsi</th>
+            <th className="w-25% text-start p-2">Deskripsi</th>
             <th className="w-10% text-start">Kategori</th>
             <th className="w-15% text-start">Harga</th>
             <th className="w-10% text-start">Link Produk</th>
