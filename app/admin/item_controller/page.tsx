@@ -11,7 +11,7 @@ export default function BarangPage() {
           onChange={(e) => {
           }} />
         </div>
-        <Link href={"/"} className="btn">
+        <Link href={"/"} className="btn col-end-12">
           
           Button
         </Link>
