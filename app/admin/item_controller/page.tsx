@@ -21,7 +21,7 @@ export default function BarangPage() {
 
       <table className='w-full shadow-md'>
         <thead>
-          <tr className="">
+          <tr className="border">
             <th className="">No</th>
             <th className="">Gambar</th>
             <th className="">Nama Barang</th>
