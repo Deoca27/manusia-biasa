@@ -46,7 +46,6 @@ export default function AdminPage() {
       </div>
 
       <table className='w-full shadow-md pt-2'>
-        {/* judul tabel admin */}
         <thead >
           <tr className="border border-slate-300 ">
             <th className='w-5% text-start p-2'>No</th>

@@ -18,6 +18,23 @@ export default function BarangPage() {
           Tambah
         </Link>
       </div>
+
+      <table>
+        <thead>
+          <tr className="">
+            <th className="">No</th>
+            <th className="">Gambar</th>
+            <th className="">Nama Barang</th>
+            <th className="">Deskripsi</th>
+            <th className="">Harga</th>
+            <th className="">Kategori</th>
+            <th className="">Link Produk</th>
+            <th className="">Aksi</th>
+          </tr>
+        </thead>
+
+
+      </table>
     </>
   );
 }
