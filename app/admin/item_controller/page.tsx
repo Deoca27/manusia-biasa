@@ -19,7 +19,7 @@ export default function BarangPage() {
         </Link>
       </div>
 
-      <table className='w-full shadow-md'>
+      <table className='w-full shadow-md pt-2'>
         <thead>
           <tr className="border border-slate-300 ">
             <th className="w-5% text-start p-2">No</th>
