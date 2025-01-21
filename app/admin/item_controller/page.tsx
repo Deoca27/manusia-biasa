@@ -23,7 +23,7 @@ export default function BarangPage() {
         <thead>
           <tr className="border border-slate-300 ">
             <th className="w-5% ">No</th>
-            <th className=" ">Gambar</th>
+            <th className="w-15% ">Gambar</th>
             <th className=" ">Nama Barang</th>
             <th className=" ">Deskripsi</th>
             <th className=" ">Kategori</th>
