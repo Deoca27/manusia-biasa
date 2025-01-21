@@ -22,14 +22,14 @@ export default function BarangPage() {
       <table className='w-full shadow-md'>
         <thead>
           <tr className="border border-slate-300 ">
-            <th className="">No</th>
-            <th className="">Gambar</th>
-            <th className="">Nama Barang</th>
-            <th className="">Deskripsi</th>
-            <th className="">Harga</th>
-            <th className="">Kategori</th>
-            <th className="">Link Produk</th>
-            <th className="">Aksi</th>
+            <th className="w-5% ">No</th>
+            <th className=" ">Gambar</th>
+            <th className=" ">Nama Barang</th>
+            <th className=" ">Deskripsi</th>
+            <th className=" ">Kategori</th>
+            <th className=" ">Harga</th>
+            <th className=" ">Link Produk</th>
+            <th className=" ">Aksi</th>
           </tr>
         </thead>
 
