@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { getData} from "./models/barang";
 
 export default function RootPage() {
