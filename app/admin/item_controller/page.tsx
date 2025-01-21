@@ -1,5 +1,7 @@
 "use client";
 
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export default function BarangPage() {
@@ -12,7 +14,7 @@ export default function BarangPage() {
           }} />
         </div>
         <Link href={"/"} className="btn col-end-12">
-          
+          <FontAwesomeIcon icon={faPlus} />
           Tambah
         </Link>
       </div>
