@@ -13,7 +13,7 @@ export default function BarangPage() {
         </div>
         <Link href={"/"} className="btn col-end-12">
           
-          Button
+          Tambah
         </Link>
       </div>
     </>
