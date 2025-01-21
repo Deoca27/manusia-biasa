@@ -14,6 +14,9 @@ export default function RootPage() {
     setValue(await getData());
   }
 
+  // hook dengan "use effect"
+  useEffect(() => {}, []);
+
   return (
     <main>
       {/* Hero Section */}
