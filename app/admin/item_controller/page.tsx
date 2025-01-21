@@ -3,7 +3,7 @@
 export default function BarangPage() {
   return (
     <>
-    <div className="text-center pb-4">TABEL BARANG</div>
+    <div className="text-center pb-4 font-extrabold">TABEL BARANG</div>
     </>
   );
 }
