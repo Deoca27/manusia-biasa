@@ -19,7 +19,7 @@ export default function BarangPage() {
         </Link>
       </div>
 
-      <table>
+      <table className='w-full'>
         <thead>
           <tr className="">
             <th className="">No</th>
