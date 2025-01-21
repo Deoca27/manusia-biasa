@@ -28,7 +28,7 @@ export default function BarangPage() {
             <th className="w-25% ">Deskripsi</th>
             <th className="w-10% ">Kategori</th>
             <th className="w-15% ">Harga</th>
-            <th className=" ">Link Produk</th>
+            <th className="w-10% ">Link Produk</th>
             <th className=" ">Aksi</th>
           </tr>
         </thead>
