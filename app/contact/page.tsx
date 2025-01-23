@@ -33,7 +33,7 @@ export default function ContactPage() {
       transition={{ duration: 0.7 }}
       className="text-5xl font-extrabold mb-10 text-center text-blue-900"
       >
-
+        Connect with ElectroHub
       </motion.h1>
       </div>
     </div>
