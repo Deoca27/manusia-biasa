@@ -70,7 +70,8 @@ export default function RootPage() {
               </div>
               <div>
                 <h2>{data.nama_barang}</h2>
-                {data.deskripsi} - {data.harga}
+                <p>{data.deskripsi}</p>
+                {data.harga}
               </div>
             </div>
           ))}
