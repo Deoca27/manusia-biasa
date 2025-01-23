@@ -65,6 +65,7 @@ export default function RootPage() {
                   alt={data.nama_barang}
                   width={500}
                   height={300}
+                  priority
                 />
               </div>
               <div>
