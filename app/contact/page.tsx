@@ -1,6 +1,7 @@
 'use client';
 
 import React from "react";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 export default function ContactPage() {
   return (
