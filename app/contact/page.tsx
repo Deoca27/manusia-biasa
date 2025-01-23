@@ -57,7 +57,9 @@ export default function ContactPage() {
                 <FaEnvelope className="text-blue-600 mr-4 text-2xl" />
                 <p className="text-gray-700">info@electrohub.com</p>
               </div>
+              <div className="flex space-x-4 mt-4">
 
+              </div>
             </div>
 
           </motion.div>
