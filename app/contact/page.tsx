@@ -10,7 +10,10 @@ export default function ContactPage() {
     email: '',
     message: ''
   });
-  
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  }
+
   return (
     <div>
 
