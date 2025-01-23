@@ -31,6 +31,7 @@ export default function ContactPage() {
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
+      className="text-5xl font-extrabold mb-10 text-center text-blue-900"
       >
 
       </motion.h1>
