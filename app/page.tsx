@@ -71,7 +71,7 @@ export default function RootPage() {
               <div>
                 <h2>{data.nama_barang}</h2>
                 <p>{data.deskripsi}</p>
-                {data.harga}
+                <p>{data.harga}</p>
               </div>
             </div>
           ))}
