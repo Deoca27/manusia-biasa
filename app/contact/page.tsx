@@ -44,6 +44,10 @@ export default function ContactPage() {
             className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all"
           >
             <h2 className="text-2xl font-bold mb-6 text-blue-800">Our Coordinates</h2>
+            <div className="space-y-4">
+              
+            </div>
+
           </motion.div>
 
         </div>
