@@ -58,6 +58,7 @@ export default function ContactPage() {
                 <p className="text-gray-700">info@electrohub.com</p>
               </div>
               <div className="flex space-x-4 mt-4">
+              <FaLinkedin className="text-blue-700 text-2xl hover:text-blue-900 cursor-pointer" />
 
               </div>
             </div>
