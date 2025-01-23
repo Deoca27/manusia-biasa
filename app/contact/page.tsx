@@ -54,7 +54,8 @@ export default function ContactPage() {
                 <p className="text-gray-700">(+62) 721 787 456</p>
               </div>
               <div className="flex items-center">
-                
+                <FaEnvelope className="text-blue-600 mr-4 text-2xl" />
+
               </div>
 
             </div>
