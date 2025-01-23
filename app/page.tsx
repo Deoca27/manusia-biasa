@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { getData } from "./models/barang";
+import Link from "next/link";
 
 export default function RootPage() {
   // buat hook
@@ -75,6 +76,8 @@ export default function RootPage() {
                 <p>{data.deskripsi}</p>
                 {/* harga */}
                 <p>{data.harga}</p>
+                {/* Tombol */}
+                <Link href={"/"}>Kunjungi</Link>
               </div>
             </div>
           ))}
