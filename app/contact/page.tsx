@@ -37,9 +37,14 @@ export default function ContactPage() {
         </motion.h1>
 
         <div className="grid md:grid-cols-3 gap-8">
+        <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        >
+          
+        </motion.div>
 
         </div>
-        
+
       </div>
     </div>
   );
