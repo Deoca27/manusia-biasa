@@ -45,7 +45,10 @@ export default function ContactPage() {
           >
             <h2 className="text-2xl font-bold mb-6 text-blue-800">Our Coordinates</h2>
             <div className="space-y-4">
-              
+              <div className="flex items-center">
+
+              </div>
+
             </div>
 
           </motion.div>
