@@ -26,6 +26,9 @@ export default function ContactPage() {
 
   return (
     <div className="bg-gradient-to-br from-blue-50 to-blue-100 py-16">
+      <div className="container mx-auto px-6">
+        
+      </div>
     </div>
   );
 }
