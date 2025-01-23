@@ -60,7 +60,7 @@ export default function ContactPage() {
               <div className="flex space-x-4 mt-4">
               <FaLinkedin className="text-blue-700 text-2xl hover:text-blue-900 cursor-pointer" />
               <FaTwitter className="text-blue-500 text-2xl hover:text-blue-700 cursor-pointer" />
-              
+              <FaInstagram className="text-pink-600 text-2xl hover:text-pink-800 cursor-pointer" />
               </div>
             </div>
 
