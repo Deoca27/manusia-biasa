@@ -54,6 +54,14 @@ export default function RootPage() {
       <div className="py-16 px-6">
         <h2 className="text-5xl font-bold mb-12 text-center">Product</h2>
         <div className="grid grid-cols-4 gap-6">
+          {/* tampilkan data barang */}
+          {Object.values(getValue).map((data: any, index: number) => (
+            <div key={index}>
+              <div>
+                {data.nama_barang} - {data.deskripsi} - {data.harga}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </main>
