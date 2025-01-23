@@ -37,15 +37,14 @@ export default function ContactPage() {
         </motion.h1>
 
         <div className="grid md:grid-cols-3 gap-8">
-        <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all"
-
-        >
-          
-        </motion.div>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all"
+          >
+            <h2 className="text-2xl font-bold mb-6 text-blue-800">Our Coordinates</h2>
+          </motion.div>
 
         </div>
 
