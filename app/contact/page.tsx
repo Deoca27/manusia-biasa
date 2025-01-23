@@ -18,6 +18,10 @@ export default function ContactPage() {
       [id]: value
     }));
   };
+  
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+  }
 
   return (
     <div>
