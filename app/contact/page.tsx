@@ -27,14 +27,19 @@ export default function ContactPage() {
   return (
     <div className="bg-gradient-to-br from-blue-50 to-blue-100 py-16">
       <div className="container mx-auto px-6">
-      <motion.h1
-      initial={{ opacity: 0, y: -50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7 }}
-      className="text-5xl font-extrabold mb-10 text-center text-blue-900"
-      >
-        Connect with ElectroHub
-      </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="text-5xl font-extrabold mb-10 text-center text-blue-900"
+        >
+          Connect with ElectroHub
+        </motion.h1>
+
+        <div className="grid md:grid-cols-3 gap-8">
+
+        </div>
+        
       </div>
     </div>
   );
