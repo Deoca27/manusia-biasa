@@ -25,8 +25,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div>
-
+    <div className="bg-gradient-to-br from-blue-50 to-blue-100 py-16">
     </div>
   );
 }
