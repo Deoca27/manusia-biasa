@@ -46,6 +46,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold mb-6 text-blue-800">Our Coordinates</h2>
             <div className="space-y-4">
               <div className="flex items-center">
+                <FaMapMarkerAlt className="text-blue-600 mr-4 text-2xl" />
 
               </div>
 
