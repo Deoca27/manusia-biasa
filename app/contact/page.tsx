@@ -51,6 +51,7 @@ export default function ContactPage() {
               </div>
               <div className="flex items-center">
               <FaPhone className="text-blue-600 mr-4 text-2xl" />
+              <p className="text-gray-700">(+62) 721 787 456</p>
 
               </div>
 
