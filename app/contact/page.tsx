@@ -6,7 +6,11 @@ import { motion } from 'framer-motion';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-  })
+    name: '',
+    email: '',
+    message: ''
+  });
+  
   return (
     <div>
 
