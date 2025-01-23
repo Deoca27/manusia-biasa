@@ -21,7 +21,8 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  }
+    alert('Message sent! We will get back to you soon.');
+  };
 
   return (
     <div>
