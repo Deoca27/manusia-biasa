@@ -39,6 +39,7 @@ export default function ContactPage() {
         <div className="grid md:grid-cols-3 gap-8">
         <motion.div
         initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
         >
           
         </motion.div>
