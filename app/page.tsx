@@ -69,7 +69,8 @@ export default function RootPage() {
                 />
               </div>
               <div>
-                {data.nama_barang} - {data.deskripsi} - {data.harga}
+                <h2>{data.nama_barang}</h2>
+                {data.deskripsi} - {data.harga}
               </div>
             </div>
           ))}
