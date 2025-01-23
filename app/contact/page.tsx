@@ -47,6 +47,8 @@ export default function ContactPage() {
             <div className="space-y-4">
               <div className="flex items-center">
                 <FaMapMarkerAlt className="text-blue-600 mr-4 text-2xl" />
+                <p className="text-gray-700">Jl. Zainal Abidin Pagar Alam No. 9-11, Bandar Lampung</p>
+
 
               </div>
 
