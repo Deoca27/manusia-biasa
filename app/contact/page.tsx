@@ -50,7 +50,8 @@ export default function ContactPage() {
                 <p className="text-gray-700">Jl. Zainal Abidin Pagar Alam No. 9-11, Bandar Lampung</p>
               </div>
               <div className="flex items-center">
-                
+              <FaPhone className="text-blue-600 mr-4 text-2xl" />
+
               </div>
 
             </div>
