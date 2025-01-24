@@ -5,6 +5,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 export default function BarangPage() {
+  const [getValue, setValue] = useState({});
+  
+    async function fetchData() {
+      setValue(await getData());
+    }
+  
+    useEffect(() => {
+      fetchData();
+    }, [])
+  
+
   return (
     <>
       <div className="text-center pb-4 font-extrabold text-2xl">TABEL BARANG</div>
@@ -32,7 +43,11 @@ export default function BarangPage() {
             <th className="w-5% text-center">Aksi</th>
           </tr>
         </thead>
+          <tbody>
+          {Object.values(getValue).map((data: any, index: number,) => (
 
+          ))}
+          </tbody>
 
       </table>
     </>
