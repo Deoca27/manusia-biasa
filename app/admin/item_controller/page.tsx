@@ -4,7 +4,7 @@ import { getData } from "@/app/models/barang";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function BarangPage() {
   const [getValue, setValue] = useState({});
