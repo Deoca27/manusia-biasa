@@ -102,6 +102,7 @@ export default function ContactPage() {
                 <textarea
                 id="message"
                 rows={5} 
+                value={formData.message}
                 ></textarea>
               </div>
             </form>
