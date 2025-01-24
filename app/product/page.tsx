@@ -37,7 +37,7 @@ export default function ProductPage() {
               width={500} 
               height={300}
               priority
-              className="object-cover"
+              className="object-cover w-full"
               />
             </div>
             <div className="p-3 text-center">
