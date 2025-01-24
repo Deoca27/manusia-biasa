@@ -92,6 +92,7 @@ export default function ContactPage() {
                     id="email" 
                     value={formData.email}
                     onChange={handleChange}
+                    required
 
                   />
                 </div>
