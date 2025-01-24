@@ -90,7 +90,7 @@ export default function ContactPage() {
                   <input
                     type="email"
                     id="email" 
-
+                    value={formData.email}
                   />
                 </div>
               </div>
