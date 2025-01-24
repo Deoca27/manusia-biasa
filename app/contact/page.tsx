@@ -89,15 +89,17 @@ export default function ContactPage() {
                   <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email Address</label>
                   <input
                     type="email"
-                    id="email" 
+                    id="email"
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full border-2 border-blue-200 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                    className="w-full border-2 border-blue-200 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
               </div>
-              <div className="mb-6"></div>
+              <div className="mb-6">
+                <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Your Message</label>
+              </div>
             </form>
 
           </motion.div>
