@@ -16,3 +16,15 @@ export async function getData() {
   
   return barang;
 }
+
+// function setDelete
+export const setUpdateStatus = async (link_product: string) => {
+  await prisma.tb_barang.updateMany({
+    where: {
+      link_product: link_product,
+    },
+    data: {
+      status: 'N',
+    },
+  })
+}
