@@ -33,7 +33,7 @@ export default function BarangPage() {
         </Link>
       </div>
 
-      <table className='w-full shadow-md pt-2'>
+      <table className='w-full shadow-md pt-2 table-fixed'>
         <thead>
           <tr className="border border-slate-300 ">
             <th className="w-5% text-start p-2">No</th>
