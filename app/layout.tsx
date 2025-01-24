@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en" data-theme="lemonade">
       <body> 
         {/* Area Header */}
-        <header className="flex justify-between items-center px-5 py-4 bg-blue-800 text-white shadow-lg">
+        <header className="flex justify-between items-center px-5 py-4 text-gray-900 shadow-lg">
           <Link href={"/admin/admin_controller"} className="text-lg font-bold hover:text-blue-400 transition">ke admin(sementara)</Link>
           <nav className="flex justify-end">
             <Link href={"/"} className="hover:text-blue-400 transition ml-2.5">Home</Link>
