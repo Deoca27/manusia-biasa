@@ -1,5 +1,6 @@
 "use client";
 
+import { getData } from "@/app/models/barang";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
