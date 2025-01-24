@@ -1,6 +1,7 @@
 // import file "globals.css"
 import Link from "next/link"
 import "./globals.css"
+import { Home, Info, ShoppingCart, Mail, User } from 'lucide-react'
 
 export const metadata = {
   title: 'katalog electronic',
