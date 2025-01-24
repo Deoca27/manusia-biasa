@@ -33,7 +33,9 @@ export default function RootLayout({
               <ShoppingCart className="mr-2 group-hover:scale-110 transition" size={20} />
               Products
               </Link>
-              <Link href={"/contact"} className="group flex items-center hover:text-blue-300 transition ml-2.5">Contact</Link>
+              <Link href={"/contact"} className="group flex items-center hover:text-blue-300 transition ml-2.5">
+              <Mail className="mr-2 group-hover:scale-110 transition" size={20} />
+              Contact</Link>
             </nav>
           </div>
         </header>
