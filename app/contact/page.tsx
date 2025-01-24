@@ -76,6 +76,8 @@ export default function ContactPage() {
               <div className="grid grid-cols-2 gap-6 mb-6">
                 <div>
                   <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Full Name</label>
+                  <input
+                  />
                 </div>
               </div>
             </form>
