@@ -75,7 +75,7 @@ export default function RootPage() {
                 {/* deskripsi */}
                 <p className="text-gray-600 text-sm">{data.deskripsi}</p>
                 {/* harga */}
-                <p>{data.harga}</p>
+                <p>Rp {data.harga}</p>
                 {/* Tombol */}
                 <Link href={"/"}>Kunjungi</Link>
               </div>
