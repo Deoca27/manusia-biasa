@@ -31,7 +31,11 @@ export default function ProductPage() {
     <div>
       <title>Product</title>
       <div>
-        <select className="select select-bordered w-full max-w-xs">
+        {/* Dropdown Kategori */}
+        <select 
+        className="select select-bordered w-full max-w-xs"
+        value={selectedCategory || ""}
+        >
           <option disabled selected>
             Kategori
           </option>
