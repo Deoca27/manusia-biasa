@@ -33,10 +33,14 @@ export default function ProductPage() {
       <div>
         <select className="select select-bordered w-full max-w-xs">
           <option disabled selected>
-            Who shot first?
+            Kategori
           </option>
-          <option>Han Solo</option>
-          <option>Greedo</option>
+          <option>Handphone</option>
+          <option>Komputer</option>
+          <option>Laptop</option>
+          <option>TV</option>
+          <option>Accesoris</option>
+          <option>Console</option>
         </select>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
