@@ -69,6 +69,7 @@ export default function ContactPage() {
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
+          className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all col-span-2"
           >
 
           </motion.div>
