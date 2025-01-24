@@ -9,9 +9,9 @@ export default function ProductPage() {
   const [getValue, setValue] = useState<any[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  // buat fungsi untuk panggil "getData"
-  async function fetchData() {
-    const data = await getData();
+  // buat fungsi untuk panggil "getData" dengan filter kategori
+  async function fetchData(category: string | null = null) {
+    const data = await getData(category);
     setValue(data);
   }
 
