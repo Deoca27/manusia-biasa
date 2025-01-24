@@ -59,7 +59,7 @@ export default function BarangPage() {
               <td className="truncate max-w-xs p-2">{data.link_product}</td>
               <td>
                 <div className="dropdown dropdown-bottom dropdown-end">
-                  <div tabIndex={0} role="button" className="btn m-1">...</div>
+                  <div tabIndex={0} role="button" className="btn m-1" title="Aksi">...</div>
                   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                     <li><Link href={"/"}><FontAwesomeIcon icon={faPenToSquare} />Edit</Link></li>
                     <li><Link href={"/"}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
