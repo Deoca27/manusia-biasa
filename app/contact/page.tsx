@@ -99,6 +99,7 @@ export default function ContactPage() {
               </div>
               <div className="mb-6">
                 <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Your Message</label>
+                <textarea></textarea>
               </div>
             </form>
 
