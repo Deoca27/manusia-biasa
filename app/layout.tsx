@@ -26,6 +26,7 @@ export default function RootLayout({
                 <span>Home</span>
               </Link>
               <Link href={"/about"} className="group flex items-center hover:text-blue-300 transition ml-2.5">
+              <Info className="mr-2 group-hover:scale-110 transition" size={20} />
               About
               </Link>
               <Link href={"/product"} className="hover:text-blue-400 transition ml-2.5">Products</Link>
