@@ -62,7 +62,7 @@ export default function RootPage() {
             <div key={index}>
               <div>
                 <Image
-                  src="/images/foto.png"
+                  src={data.image_url}
                   alt={data.nama_barang}
                   width={500}
                   height={300}
