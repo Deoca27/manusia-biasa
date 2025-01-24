@@ -32,7 +32,7 @@ export default function ProductPage() {
           >
             <div className="w-full h-48 bg-gray-100 flex items-center justify-center border-b border-gray-200">
               <Image
-              src="/images/foto.png" 
+              src={data.image_url}
               alt={data.nama_barang}
               width={500} 
               height={300}
