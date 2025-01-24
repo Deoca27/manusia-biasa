@@ -19,9 +19,13 @@ export default function AdditemPage() {
                 />
 
                 <select className="select select-bordered w-full max-w-xs">
-                    <option disabled selected>Who shot first?</option>
-                    <option>Han Solo</option>
-                    <option>Greedo</option>
+                    <option disabled selected>Pilih kategori Elektronik</option>
+                    <option>Handphone</option>
+                    <option>Komputer</option>
+                    <option>Laptop</option>
+                    <option>TV</option>
+                    <option>Accesoris</option>
+                    <option>Console</option>
                 </select>
 
                 <input type="text" placeholder="link_product" className="input input-bordered w-full max-w-xs"
