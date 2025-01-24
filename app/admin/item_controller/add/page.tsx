@@ -19,13 +19,13 @@ export default function AdditemPage() {
                 />
 
                 <select className="select select-bordered w-full max-w-xs">
-                    <option disabled selected>Pilih kategori Elektronik</option>
-                    <option>Handphone</option>
-                    <option>Komputer</option>
-                    <option>Laptop</option>
-                    <option>TV</option>
-                    <option>Accesoris</option>
-                    <option>Console</option>
+                    <option value={""} disabled selected >Pilih kategori Elektronik</option>
+                    <option value={"Handphone"}>Handphone</option>
+                    <option value={"Komputer"}>Komputer</option>
+                    <option value={"Laptop"}>Laptop</option>
+                    <option value={"TV"}>TV</option>
+                    <option value={"Accesoris"}>Accesoris</option>
+                    <option value={"Console"}>Console</option>
                 </select>
 
                 <input type="text" placeholder="link_product" className="input input-bordered w-full max-w-xs"
