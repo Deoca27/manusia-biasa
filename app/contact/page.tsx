@@ -79,6 +79,7 @@ export default function ContactPage() {
                   <input
                     type="text"
                     id="name"
+                    value={formData.name}
                   />
                 </div>
               </div>
