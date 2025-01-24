@@ -97,6 +97,7 @@ export default function ContactPage() {
                   />
                 </div>
               </div>
+              <div className="mb-6"></div>
             </form>
 
           </motion.div>
