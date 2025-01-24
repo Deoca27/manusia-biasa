@@ -44,7 +44,7 @@ export default function ProductPage() {
           <option value={"Komputer"}>Komputer</option>
           <option value={"Laptop"}>Laptop</option>
           <option value={"TV"}>TV</option>
-          <option>Accesoris</option>
+          <option value={"Accesoris"}>Accesoris</option>
           <option>Console</option>
         </select>
       </div>
