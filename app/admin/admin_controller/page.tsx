@@ -45,13 +45,13 @@ export default function AdminPage() {
 
       </div>
 
-      <table className='w-full shadow-md pt-2'>
+      <table className='w-full shadow-md pt-2 table-fixed'>
         <thead >
           <tr className="border border-slate-300 ">
             <th className='w-5% text-start p-2'>No</th>
             <th className='w-1/2 text-start p-2'>Nama</th>
-            <th className='w-40% text-start p-2'>password</th>
-            <th className='w-5% text-center'></th>
+            <th className='w-35% text-start p-2'>password</th>
+            <th className='w-10% text-center'></th>
           </tr>
         </thead>
 
