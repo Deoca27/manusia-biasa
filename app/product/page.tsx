@@ -45,7 +45,7 @@ export default function ProductPage() {
           <option value={"Laptop"}>Laptop</option>
           <option value={"TV"}>TV</option>
           <option value={"Accesoris"}>Accesoris</option>
-          <option>Console</option>
+          <option value={"Console"}>Console</option>
         </select>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
