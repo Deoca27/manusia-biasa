@@ -50,7 +50,7 @@ export default function BarangPage() {
           {Object.values(getValue).map((data: any, index: number,) => (
             <tr key={index}>
               <td className="p-2">{index + 1}</td>
-              <td><Image src={data.image_url} alt="gambar" width={100} height={100} priority/></td>
+              <td className="p-2"><Image src={data.image_url} alt="gambar" width={100} height={100} priority/></td>
               <td>{data.nama_barang}</td>
               <td>{data.deskripsi}</td>
               <td>{data.kategori}</td>
