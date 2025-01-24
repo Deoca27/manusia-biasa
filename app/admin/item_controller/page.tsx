@@ -3,6 +3,7 @@
 import { getData } from "@/app/models/barang";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -47,9 +48,9 @@ export default function BarangPage() {
         </thead>
           <tbody>
           {Object.values(getValue).map((data: any, index: number,) => (
-            <tr>
+            <tr key={index}>
               <td>{index + 1}</td>
-              <td></td>
+              <td><Image src={data.image_url} alt="gambar" width={100} height={100} priority/></td>
               <td></td>
               <td></td>
               <td></td>
