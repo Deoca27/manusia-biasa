@@ -55,7 +55,7 @@ export default function BarangPage() {
               <td className="p-2">{data.deskripsi}</td>
               <td className="p-2">{data.kategori}</td>
               <td className="p-2">{data.harga}</td>
-              <td className="truncate max-w-xs">{data.link_product}</td>
+              <td className="truncate max-w-xs p-2">{data.link_product}</td>
               <td></td>
             </tr>
           ))}
