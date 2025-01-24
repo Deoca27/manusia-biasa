@@ -35,6 +35,7 @@ export default function ProductPage() {
         <select 
         className="select select-bordered w-full max-w-xs"
         value={selectedCategory || ""}
+        onChange={handleCategoryChange}
         >
           <option disabled selected>
             Kategori
