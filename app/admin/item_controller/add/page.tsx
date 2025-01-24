@@ -1,8 +1,42 @@
 "use client";
 
+import { checkData, SaveData } from "@/app/models/barang";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function AdditemPage() {
+    // buat hook (useState)
+    const [getImage, setImage] = useState("");
+    const [getNamaBarang, setNamaBarang] = useState("");
+    const [getDeskripsi, setDeskripsi] = useState("");
+    const [getHarga, setHarga] = useState(""); // tetap string karena input dari form adalah string
+    const [getKategori, setKategori] = useState("");
+    const [getLinkProduc, setLinkProduc] = useState("");
+
+    // buat hook (useState)
+    // untuk respon hasil fungsi "checkData"
+    const [getValue, setValue] = useState({});
+
+    // buat fungsi untuk respon fungsi "checkData"
+    const getCheckData = async (link_product: string) => {
+        setValue(await checkData(link_product));
+    };
+
+    // simpan data
+    const setSaveData = async () => {
+        (getImage == "" || getNamaBarang == "" || getDeskripsi == "" || getHarga == "" || getKategori == "" || getLinkProduc == "")
+            ? alert("Lengkapi seluruh data")
+            : isNaN(parseFloat(getHarga)) // validasi jika harga bukan angka
+                ? alert("Harga harus berupa angka yang valid")
+                : (Object.values(getValue).length == 0)
+                    ? [await SaveData(getImage, getNamaBarang, getDeskripsi, parseFloat(getHarga), getKategori, getLinkProduc), // konversi harga ke number
+                    alert("Berhasil tambah data"),
+                    location.reload()
+                    ]
+                    : alert("Link Sudah ada");
+    };
+
+
 
     return (
         <>
@@ -43,7 +77,7 @@ export default function AdditemPage() {
                     type="text"
                     placeholder="link_product"
                     className="input input-bordered flex col-start-4 col-span-4"
-
+                    
                 />
 
                 <button className="btn col-end-7">Simpan</button>
