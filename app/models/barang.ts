@@ -28,3 +28,32 @@ export const setUpdateStatus = async (link_product: string) => {
     },
   })
 }
+
+// buat fungsi check data 
+export const checkData = async (link_product: string) => {
+  const check = await prisma.tb_barang.findMany({
+    select: {
+      id: true,
+    },
+    where: {
+      link_product: link_product,
+
+    },
+  });
+  return check;
+};
+
+// buat fungsi untuk simpan data 
+export const SaveData = async (image_url: string, nama_barang: string, deskripsi:string, harga:number, kategori:string, link_product:string) => {
+  await prisma.tb_barang.create({
+    data: {
+      image_url: image_url,
+      nama_barang: nama_barang,
+      deskripsi: deskripsi,
+      harga: parseFloat(harga.toString()),
+      kategori: kategori,
+      link_product: link_product,
+      status: 'Y',
+    },
+  })
+}

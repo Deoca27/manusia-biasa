@@ -8,15 +8,24 @@ export default function AdditemPage() {
         <>
             <div className="text-center pb-4 font-extrabold text-2xl">TAMBAH BARANG</div>
             <div className="grid grid-cols-10 gap-4 mt-16">
-                <input type="text" placeholder="Nama Barang" className="input input-bordered flex col-start-4 col-span-4"
+                <input
+                    type="text"
+                    placeholder="Nama Barang"
+                    className="input input-bordered flex col-start-4 col-span-4"
 
                 />
 
-                <input type="text" placeholder="Deskripsi" className="input input-bordered flex col-start-4 col-span-4"
+                <input
+                    type="text"
+                    placeholder="Deskripsi"
+                    className="input input-bordered flex col-start-4 col-span-4"
 
                 />
 
-                <input type="text" placeholder="harga" className="input input-bordered flex col-start-4 col-span-4"
+                <input
+                    type="text"
+                    placeholder="harga"
+                    className="input input-bordered flex col-start-4 col-span-4"
 
                 />
 
@@ -30,7 +39,10 @@ export default function AdditemPage() {
                     <option value={"Console"}>Console</option>
                 </select>
 
-                <input type="text" placeholder="link_product" className="input input-bordered flex col-start-4 col-span-4"
+                <input
+                    type="text"
+                    placeholder="link_product"
+                    className="input input-bordered flex col-start-4 col-span-4"
 
                 />
 
