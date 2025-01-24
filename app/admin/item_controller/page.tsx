@@ -39,7 +39,7 @@ export default function BarangPage() {
           onChange={(e) => {
           }} />
         </div>
-        <Link href={"/"} className="btn col-end-12">
+        <Link href={"/admin/item_controller/add"} className="btn col-end-12">
           <FontAwesomeIcon icon={faPlus} />
           Tambah
         </Link>
