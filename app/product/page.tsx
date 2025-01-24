@@ -37,7 +37,7 @@ export default function ProductPage() {
         value={selectedCategory || ""}
         onChange={handleCategoryChange}
         >
-          <option disabled selected>
+          <option value="" disabled>
             Kategori
           </option>
           <option>Handphone</option>
