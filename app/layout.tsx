@@ -20,7 +20,7 @@ export default function RootLayout({
           <Link href={"/admin/admin_controller"} className="text-lg font-bold hover:text-blue-400 transition">ke admin(sementara)</Link>
           <nav className="flex justify-end">
             <Link href={"/"} className="hover:text-blue-400 transition">Home</Link>
-            <Link href={"/about"} className="mx-2.5">About</Link>
+            <Link href={"/about"} className="hover:text-blue-400 transition">About</Link>
             <Link href={"/product"} className="mx-2.5">Products</Link>
             <Link href={"/contact"} className="ml-2.5">Contact</Link>
           </nav>
