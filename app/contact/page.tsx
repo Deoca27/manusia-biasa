@@ -78,6 +78,7 @@ export default function ContactPage() {
                   <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Full Name</label>
                   <input
                     type="text"
+                    id="name"
                   />
                 </div>
               </div>
