@@ -27,7 +27,7 @@ export default function RootLayout({
         </header>
 
         {/* Area Conten */}
-        <section>
+        <section className="min-h-[calc(100vh-128px)] bg-gray-100 py-10">
         {children}
         </section>
 
