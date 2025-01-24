@@ -53,7 +53,7 @@ export default function BarangPage() {
               <td><Image src={data.image_url} alt="gambar" width={100} height={100} priority/></td>
               <td>{data.nama_barang}</td>
               <td>{data.deskripsi}</td>
-              <td></td>
+              <td>{data.kategori}</td>
               <td></td>
               <td></td>
               <td></td>
