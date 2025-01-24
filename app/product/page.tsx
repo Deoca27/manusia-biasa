@@ -41,7 +41,7 @@ export default function ProductPage() {
             Kategori
           </option>
           <option value={"Handphone"}>Handphone</option>
-          <option>Komputer</option>
+          <option value={"Komputer"}>Komputer</option>
           <option>Laptop</option>
           <option>TV</option>
           <option>Accesoris</option>
