@@ -32,7 +32,7 @@ export default function RootLayout({
         </section>
 
         {/* Area Footer */}
-        <footer className="flex justify-center bg-blue-800 text-white py-2.5">
+        <footer className="flex justify-center bg-gray-900 text-white py-2.5">
         Copyright &copy; 2025 - Manusia Biasa Team
         </footer>
       </body>
