@@ -31,6 +31,8 @@ export default function AdditemPage() {
                 <input type="text" placeholder="link_product" className="input input-bordered flex col-start-4 col-span-4"
 
                 />
+
+                <button className="btn">Simpan</button>
             </div>
         </>
     );
