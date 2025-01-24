@@ -103,6 +103,7 @@ export default function ContactPage() {
                 id="message"
                 rows={5} 
                 value={formData.message}
+                onChange={handleChange}
                 ></textarea>
               </div>
             </form>
