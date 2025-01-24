@@ -46,24 +46,34 @@ export default function AdditemPage() {
                     type="text"
                     placeholder="Nama Barang"
                     className="input input-bordered flex col-start-4 col-span-4"
-
+                    onChange={(e) => {
+                        setNamaBarang(e.target.value);
+                    }}
                 />
 
                 <input
                     type="text"
                     placeholder="Deskripsi"
                     className="input input-bordered flex col-start-4 col-span-4"
-
+                    onChange={(e) => {
+                        setDeskripsi(e.target.value);
+                    }}
                 />
 
                 <input
                     type="text"
                     placeholder="harga"
                     className="input input-bordered flex col-start-4 col-span-4"
-
+                    onChange={(e) => {
+                        setHarga(e.target.value);
+                    }}
                 />
 
-                <select className="select select-bordered flex col-start-4 col-span-4">
+                <select className="select select-bordered flex col-start-4 col-span-4"
+                    onChange={(e) => {
+                        setKategori(e.target.value);
+                    }}
+                >
                     <option value={""} disabled selected >Pilih kategori Elektronik</option>
                     <option value={"Handphone"}>Handphone</option>
                     <option value={"Komputer"}>Komputer</option>
@@ -77,7 +87,10 @@ export default function AdditemPage() {
                     type="text"
                     placeholder="link_product"
                     className="input input-bordered flex col-start-4 col-span-4"
-                    
+                    onChange={(e) => {
+                        setLinkProduc(e.target.value);
+                        getCheckData(e.target.value);
+                    }}
                 />
 
                 <button className="btn col-end-7">Simpan</button>
