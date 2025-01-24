@@ -80,6 +80,7 @@ export default function ContactPage() {
                     type="text"
                     id="name"
                     value={formData.name}
+                    onChange={handleChange}
                   />
                 </div>
               </div>
