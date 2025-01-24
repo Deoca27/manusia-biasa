@@ -118,12 +118,13 @@ export default function ContactPage() {
           </motion.div>
         </div>
         <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.7, delay: 0.5 }}
-        className="mt-12 text-center bg-white p-8 rounded-2xl shadow-lg"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="mt-12 text-center bg-white p-8 rounded-2xl shadow-lg"
         >
           <h3 className="text-3xl font-bold mb-4 text-blue-900">About ElectroHub</h3>
+          <p className="text-gray-700 max-w-3xl mx-auto"></p>
 
         </motion.div>
 
