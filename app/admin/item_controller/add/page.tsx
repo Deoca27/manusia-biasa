@@ -93,7 +93,7 @@ export default function AdditemPage() {
                     }}
                 />
 
-                <button className="btn col-end-7">Simpan</button>
+                <button className="btn col-end-7" onClick={setSaveData}>Simpan</button>
                 <Link href={"/admin/item_controller"} className="btn btn-neutral">Batal</Link>
             </div>
         </>
