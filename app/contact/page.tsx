@@ -100,25 +100,24 @@ export default function ContactPage() {
               <div className="mb-6">
                 <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Your Message</label>
                 <textarea
-                id="message"
-                rows={5} 
-                value={formData.message}
-                onChange={handleChange}
-                required
-                className="w-full border-2 border-blue-200 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  id="message"
+                  rows={5}
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  className="w-full border-2 border-blue-200 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 ></textarea>
               </div>
               <button
-              type="submit" 
-              className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors font-semibold"
+                type="submit"
+                className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition-colors font-semibold"
               >
                 Send Message
               </button>
             </form>
-
           </motion.div>
-
         </div>
+        <motion.div></motion.div>
 
       </div>
     </div>
