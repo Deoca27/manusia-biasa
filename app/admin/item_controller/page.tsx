@@ -1,12 +1,23 @@
 "use client";
 
-import { getData } from "@/app/models/barang";
+import { getData, setUpdateStatus } from "@/app/models/barang";
 import { faPenToSquare } from "@fortawesome/free-regular-svg-icons";
 import { faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+//buat fungsi untuk dialog hapus
+async function setDelete(nama_barang: string, link_product: string) {
+  // alert("Hapus Data");
+  if (confirm(`apakah barang ${nama_barang} Ingin Dihapus`) == true) {
+    await setUpdateStatus(link_product)
+    alert(`barang ${nama_barang} Berhasil Dihapus`);
+    // reload otomatis
+    location.reload();
+  }
+}
 
 export default function BarangPage() {
   const [getValue, setValue] = useState({});
@@ -62,7 +73,7 @@ export default function BarangPage() {
                   <div tabIndex={0} role="button" className="btn m-1" title="Aksi">...</div>
                   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                     <li><Link href={"/"}><FontAwesomeIcon icon={faPenToSquare} />Edit</Link></li>
-                    <li><Link href={"/"}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
+                    <li><Link href={"/admin/item_controller"} onClick={() => { setDelete(data.nama_barang, data.link_product) }}><FontAwesomeIcon icon={faTrash}/>Hapus</Link></li>
                   </ul>
                 </div>
               </td>
