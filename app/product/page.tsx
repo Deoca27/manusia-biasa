@@ -37,10 +37,10 @@ export default function ProductPage() {
         value={selectedCategory || ""}
         onChange={handleCategoryChange}
         >
-          <option value="" disabled>
+          <option value={""} disabled>
             Kategori
           </option>
-          <option>Handphone</option>
+          <option value={"Handphone"}>Handphone</option>
           <option>Komputer</option>
           <option>Laptop</option>
           <option>TV</option>
