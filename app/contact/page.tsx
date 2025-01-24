@@ -58,19 +58,20 @@ export default function ContactPage() {
                 <p className="text-gray-700">info@electrohub.com</p>
               </div>
               <div className="flex space-x-4 mt-4">
-              <FaLinkedin className="text-blue-700 text-2xl hover:text-blue-900 cursor-pointer" />
-              <FaTwitter className="text-blue-500 text-2xl hover:text-blue-700 cursor-pointer" />
-              <FaInstagram className="text-pink-600 text-2xl hover:text-pink-800 cursor-pointer" />
+                <FaLinkedin className="text-blue-700 text-2xl hover:text-blue-900 cursor-pointer" />
+                <FaTwitter className="text-blue-500 text-2xl hover:text-blue-700 cursor-pointer" />
+                <FaInstagram className="text-pink-600 text-2xl hover:text-pink-800 cursor-pointer" />
               </div>
             </div>
           </motion.div>
 
           <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all col-span-2"
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="bg-white p-8 rounded-2xl shadow-2xl hover:shadow-3xl transition-all col-span-2"
           >
+            <h2 className="text-2xl font-bold mb-6 text-blue-800">Send Us a Message</h2>
 
           </motion.div>
 
