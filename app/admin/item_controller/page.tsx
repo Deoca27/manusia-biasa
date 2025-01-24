@@ -21,14 +21,28 @@ async function setDelete(nama_barang: string, link_product: string) {
 
 export default function BarangPage() {
   const [getValue, setValue] = useState({});
+  const [searchTerm, setSearchTerm] = useState(""); // State untuk pencarian
+  const [filteredData, setFilteredData] = useState({});
 
   async function fetchData() {
-    setValue(await getData());
+    const data = await getData();
+    setValue(data);
+    setFilteredData(data);
   }
 
   useEffect(() => {
     fetchData();
   }, [])
+
+  useEffect(() => {
+    // Filter data berdasarkan searchTerm
+    const filtered = Object.fromEntries(
+      Object.entries(getValue).filter(([key, value]: [string, any]) =>
+        value.nama_barang.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    );
+    setFilteredData(filtered);
+  }, [searchTerm, getValue]); // Update ketika searchTerm atau data berubah
 
 
   return (
@@ -39,8 +53,8 @@ export default function BarangPage() {
       {/* searching dan tombol tambah */}
       <div className="grid grid-cols-10 gap-4 pb-2">
         <div className=" col-start-1 col-end-4"><input type="text" placeholder="Search" className="input input-bordered w-full "
-          onChange={(e) => {
-          }} />
+          onChange={(e) => setSearchTerm(e.target.value)} // Update searchTerm
+        />
         </div>
         <Link href={"/admin/item_controller/add"} className="btn col-end-12">
           <FontAwesomeIcon icon={faPlus} />
@@ -65,7 +79,7 @@ export default function BarangPage() {
 
         {/* isi tabel */}
         <tbody>
-          {Object.values(getValue).map((data: any, index: number,) => (
+        {Object.values(filteredData).map((data: any, index: number) => (
             <tr key={index} className="border border-slate-300 ">
               <td className="p-2">{index + 1}</td>
               <td className="p-2"><Image src={data.image_url} alt={data.nama_barang} width={100} height={100} priority /></td>
