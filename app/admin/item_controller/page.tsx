@@ -2,7 +2,7 @@
 
 import { getData } from "@/app/models/barang";
 import { faPenToSquare } from "@fortawesome/free-regular-svg-icons";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import Link from "next/link";
@@ -62,7 +62,7 @@ export default function BarangPage() {
                   <div tabIndex={0} role="button" className="btn m-1">...</div>
                   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                     <li><Link href={"/"}><FontAwesomeIcon icon={faPenToSquare} />Edit</Link></li>
-                    <li><Link href={"/"}>Hapus</Link></li>
+                    <li><Link href={"/"}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
                   </ul>
                 </div>
               </td>
