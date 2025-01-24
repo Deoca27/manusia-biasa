@@ -55,7 +55,7 @@ export default function BarangPage() {
               <td>{data.deskripsi}</td>
               <td>{data.kategori}</td>
               <td>{data.harga}</td>
-              <td></td>
+              <td>{data.link_product}</td>
               <td></td>
             </tr>
           ))}
