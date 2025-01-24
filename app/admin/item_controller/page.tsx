@@ -41,8 +41,8 @@ export default function BarangPage() {
             <th className="w-15% text-start p-2">Nama Barang</th>
             <th className="w-25% text-start p-2">Deskripsi</th>
             <th className="w-10% text-start p-2">Kategori</th>
-            <th className="w-15% text-start p-2">Harga</th>
-            <th className="w-10% text-start p-2">Link Produk</th>
+            <th className="w-10% text-start p-2">Harga</th>
+            <th className="w-15% text-start p-2">Link Produk</th>
             <th className="w-5% text-center">Aksi</th>
           </tr>
         </thead>
@@ -54,8 +54,8 @@ export default function BarangPage() {
               <td>{data.nama_barang}</td>
               <td>{data.deskripsi}</td>
               <td>{data.kategori}</td>
-              <td>{data.harga}</td>
-              <td>{data.link_product}</td>
+              <td >{data.harga}</td>
+              <td className="truncate max-w-xs">{data.link_product}</td>
               <td></td>
             </tr>
           ))}
