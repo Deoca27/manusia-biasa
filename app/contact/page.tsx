@@ -63,7 +63,9 @@ export default function ContactPage() {
               <FaInstagram className="text-pink-600 text-2xl hover:text-pink-800 cursor-pointer" />
               </div>
             </div>
+          </motion.div>
 
+          <motion.div>
           </motion.div>
 
         </div>
