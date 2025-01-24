@@ -30,7 +30,7 @@ export default function ProductPage() {
           key={index}
           className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
           >
-            <div className="w-full bg-gray-100 border-b border-gray-200">
+            <div className="w-full aspect-square bg-gray-100 border-b border-gray-200">
               <Image
               src={data.image_url}
               alt={data.nama_barang}
