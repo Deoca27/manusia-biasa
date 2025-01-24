@@ -48,7 +48,7 @@ export default function BarangPage() {
         </thead>
           <tbody>
           {Object.values(getValue).map((data: any, index: number,) => (
-            <tr key={index}>
+            <tr key={index} className="border border-slate-300 ">
               <td className="p-2">{index + 1}</td>
               <td className="p-2"><Image src={data.image_url} alt="gambar" width={100} height={100} priority/></td>
               <td className="p-2">{data.nama_barang}</td>
