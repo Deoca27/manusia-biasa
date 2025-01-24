@@ -33,7 +33,10 @@ export default function BarangPage() {
 
   return (
     <>
+      {/* judul tabel */}
       <div className="text-center pb-4 font-extrabold text-2xl">TABEL BARANG</div>
+
+      {/* searching dan tombol tambah */}
       <div className="grid grid-cols-10 gap-4 pb-2">
         <div className=" col-start-1 col-end-4"><input type="text" placeholder="Search" className="input input-bordered w-full "
           onChange={(e) => {
@@ -45,6 +48,7 @@ export default function BarangPage() {
         </Link>
       </div>
 
+      {/* header tabel */}
       <table className='w-full shadow-md pt-2 table-fixed'>
         <thead>
           <tr className="border border-slate-300 ">
@@ -58,6 +62,8 @@ export default function BarangPage() {
             <th className="w-5% text-center">Aksi</th>
           </tr>
         </thead>
+
+        {/* isi tabel */}
         <tbody>
           {Object.values(getValue).map((data: any, index: number,) => (
             <tr key={index} className="border border-slate-300 ">
@@ -73,7 +79,7 @@ export default function BarangPage() {
                   <div tabIndex={0} role="button" className="btn m-1" title="Aksi">...</div>
                   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
                     <li><Link href={"/"}><FontAwesomeIcon icon={faPenToSquare} />Edit</Link></li>
-                    <li><Link href={"/admin/item_controller"} onClick={() => { setDelete(data.nama_barang, data.link_product) }}><FontAwesomeIcon icon={faTrash}/>Hapus</Link></li>
+                    <li><Link href={"/admin/item_controller"} onClick={() => { setDelete(data.nama_barang, data.link_product) }}><FontAwesomeIcon icon={faTrash} />Hapus</Link></li>
                   </ul>
                 </div>
               </td>

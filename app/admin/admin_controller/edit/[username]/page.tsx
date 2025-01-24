@@ -57,9 +57,10 @@ export default function EditPage({ params }: { params: { username: string } }) {
 
     return (
         <>
-        <div className="text-center font-extrabold text-2xl">EDIT ADMIN</div>
+            <div className="text-center font-extrabold text-2xl">EDIT ADMIN</div>
             {Object.values(getValue)?.map((data: any, index: number) => (
                 <div key={index} className="grid grid-cols-10 gap-4 mt-16">
+                    {/* ussername */}
                     <label className="input input-bordered flex items-center col-start-4 col-span-4">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -84,6 +85,7 @@ export default function EditPage({ params }: { params: { username: string } }) {
                         />
                     </label>
 
+                    {/* password */}
                     <label className="input input-bordered flex items-center col-start-4 col-span-4 relative">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -134,6 +136,7 @@ export default function EditPage({ params }: { params: { username: string } }) {
                         </button>
                     </label>
 
+                    {/* tombol */}
                     <button className="btn col-end-7" onClick={editData}>
                         Simpan
                     </button>

@@ -32,7 +32,10 @@ export default function AdminPage() {
 
   return (
     <>
+      {/* judul tabel */}
       <div className="text-center pb-4 font-extrabold text-2xl">TABEL ADMIN</div>
+
+      {/* searching dan button tambah */}
       <div className="grid grid-cols-10 gap-4 pb-2">
         <div className=" col-start-1 col-end-4"><input type="text" placeholder="Search" className="input input-bordered w-full "
           onChange={(e) => {
@@ -45,6 +48,7 @@ export default function AdminPage() {
 
       </div>
 
+      {/* HEADER */}
       <table className='w-full shadow-md pt-2 table-fixed'>
         <thead >
           <tr className="border border-slate-300 ">
@@ -55,7 +59,7 @@ export default function AdminPage() {
           </tr>
         </thead>
 
-
+        {/* isi tabel */}
         <tbody>
           {Object.values(getValue).map((data: any, index: number,) => (
             <tr key={index} className="border border-slate-300 ">
@@ -70,6 +74,8 @@ export default function AdminPage() {
                 {data.password}
               </td>
               <td className="text-right pr-4 px-2">
+
+                {/* dropdown */}
                 <div className="dropdown dropdown-bottom dropdown-end">
                   <div tabIndex={0} role="button" className="btn m-1" title="Aksi">...</div>
                   <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">

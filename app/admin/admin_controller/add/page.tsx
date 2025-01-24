@@ -21,21 +21,22 @@ export default function AddPage() {
     }
 
     //simpan data
-    const setSaveData = async() => {
+    const setSaveData = async () => {
         (getUsername == "" || getPassword == "")
-        ? alert("Lengkapi seluruh data")
-        : (Object.values(getValue).length == 0)
-            ? [await SaveData(getUsername, getPassword),
+            ? alert("Lengkapi seluruh data")
+            : (Object.values(getValue).length == 0)
+                ? [await SaveData(getUsername, getPassword),
                 alert("Berhasil tambah data"),
                 location.reload()
-            ]
-            : alert ("NPM Sudah ada")
+                ]
+                : alert("NPM Sudah ada")
     };
 
     return (
         <>
-         <div className="text-center pb-4 font-extrabold text-2xl">TAMBAH ADMIN</div>
+            <div className="text-center pb-4 font-extrabold text-2xl">TAMBAH ADMIN</div>
             <div className="grid grid-cols-10 gap-4 mt-16">
+                {/* ussername */}
                 <label className="input input-bordered flex items-center col-start-4 col-span-4">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -52,6 +53,7 @@ export default function AddPage() {
                         }} />
                 </label>
 
+                {/* password */}
                 <label className="input input-bordered flex items-center col-start-4 col-span-4 relative">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -95,10 +97,10 @@ export default function AddPage() {
                         )}
                     </button>
                 </label>
-                
-                    <button className="btn col-end-7" onClick={setSaveData}>Simpan</button>
-                    <Link href={"/admin/admin_controller"} className="btn btn-neutral">Batal</Link>
-                
+
+                <button className="btn col-end-7" onClick={setSaveData}>Simpan</button>
+                <Link href={"/admin/admin_controller"} className="btn btn-neutral">Batal</Link>
+
             </div>
         </>
     );
