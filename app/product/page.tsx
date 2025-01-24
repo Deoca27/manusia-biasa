@@ -23,21 +23,30 @@ export default function ProductPage() {
   return (
     <div>
       <title>Product</title>
+      <div>
+        <select className="select select-bordered w-full max-w-xs">
+          <option disabled selected>
+            Who shot first?
+          </option>
+          <option>Han Solo</option>
+          <option>Greedo</option>
+        </select>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
         {/* menampilkan data barang */}
         {getValue.map((data: any, index: number) => (
-          <div 
-          key={index}
-          className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+          <div
+            key={index}
+            className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
           >
             <div className="w-full aspect-square bg-gray-100 border-b border-gray-200 overflow-hidden">
               <Image
-              src={data.image_url}
-              alt={data.nama_barang}
-              width={500} 
-              height={300}
-              priority
-              className="object-cover w-full h-full"
+                src={data.image_url}
+                alt={data.nama_barang}
+                width={500}
+                height={300}
+                priority
+                className="object-cover w-full h-full"
               />
             </div>
             <div className="p-3 text-center">
@@ -46,9 +55,7 @@ export default function ProductPage() {
                 {data.nama_barang}
               </h2>
               {/* Deskripsi */}
-              <p className="text-gray-600 text-sm">
-                {data.deskripsi}
-              </p>
+              <p className="text-gray-600 text-sm">{data.deskripsi}</p>
               {/* Harga */}
               <p className="text-base font-medium text-blue-500">
                 Rp {data.harga.toLocaleString("id-ID")}
