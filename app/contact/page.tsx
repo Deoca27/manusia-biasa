@@ -73,7 +73,9 @@ export default function ContactPage() {
           >
             <h2 className="text-2xl font-bold mb-6 text-blue-800">Send Us a Message</h2>
             <form onSubmit={handleSubmit}>
-              
+              <div className="grid grid-cols-2 gap-6 mb-6">
+
+              </div>
             </form>
 
           </motion.div>
