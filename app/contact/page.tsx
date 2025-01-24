@@ -81,6 +81,7 @@ export default function ContactPage() {
                     id="name"
                     value={formData.name}
                     onChange={handleChange}
+                    required
                   />
                 </div>
               </div>
