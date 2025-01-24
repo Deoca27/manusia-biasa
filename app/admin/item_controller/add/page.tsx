@@ -4,7 +4,7 @@ export default function AdditemPage(){
 
    return(
     <>
-    <div className="">TAMBAH BARANG</div>
+    <div className="text-center">TAMBAH BARANG</div>
         
     </>
    );
