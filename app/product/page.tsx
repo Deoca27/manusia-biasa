@@ -21,6 +21,12 @@ export default function ProductPage() {
     fetchData();
   }, []);
 
+  function handleCategoryChange(event: React.ChangeEvent<HTMLSelectElement>) {
+    const category = event.target.value;
+    setSelectedCategory(category);
+    fetchData(category); // Ambil data berdasarkan kategori yang dipilih
+  }
+
   return (
     <div>
       <title>Product</title>
