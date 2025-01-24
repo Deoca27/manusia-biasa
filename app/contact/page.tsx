@@ -125,7 +125,7 @@ export default function ContactPage() {
         >
           <h3 className="text-3xl font-bold mb-4 text-blue-900">About ElectroHub</h3>
           <p className="text-gray-700 max-w-3xl mx-auto"></p>
-
+          Kami adalah perusahaan solusi teknologi yang berdedikasi pada inovasi dan kepuasan pelanggan. Tim ahli kami berkomitmen untuk memberikan solusi elektronik mutakhir yang disesuaikan dengan kebutuhan spesifik Anda. Dengan pengalaman bertahun-tahun dan semangat untuk teknologi, kami berusaha untuk menjadi mitra tepercaya Anda dalam dunia elektronik yang terus berkembang.
         </motion.div>
 
       </div>
