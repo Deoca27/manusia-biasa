@@ -71,7 +71,7 @@ export default function RootPage() {
               </div>
               <div className="p-3 text-center">
                 {/* nama barang */}
-                <h2 className="text-lg font-semibold">{data.nama_barang}</h2>
+                <h2 className="text-lg font-semibold text-gray-800">{data.nama_barang}</h2>
                 {/* deskripsi */}
                 <p>{data.deskripsi}</p>
                 {/* harga */}
