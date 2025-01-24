@@ -119,8 +119,9 @@ export default function ContactPage() {
         </div>
         <motion.div
         initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         >
-          
+
         </motion.div>
 
       </div>
