@@ -32,7 +32,7 @@ export default function AdditemPage() {
 
                 />
 
-                <button className="btn">Simpan</button>
+                <button className="btn col-end-7">Simpan</button>
             </div>
         </>
     );
