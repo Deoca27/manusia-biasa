@@ -6,11 +6,12 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient ();
 
 // buat fungsi untuk ambil data barang
-export async function getData() {
+export async function getData(category: string | null = null) {
   // buat variable "barang"
   const barang = await prisma.tb_barang.findMany({
     where: {
       status: "Y",
+      ...(category && { kategori: category }),
     },   
   });
   
