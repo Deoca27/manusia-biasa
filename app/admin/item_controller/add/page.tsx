@@ -5,7 +5,7 @@ export default function AdditemPage() {
     return (
         <>
             <div className="text-center pb-4 font-extrabold text-2xl">TAMBAH BARANG</div>
-            <div>
+            <div className="grid grid-cols-10 gap-4 mt-16">
                 <input type="text" placeholder="Nama Barang" className="input input-bordered w-full max-w-xs"
 
                 />
