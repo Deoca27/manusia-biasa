@@ -47,7 +47,16 @@ export default function BarangPage() {
         </thead>
           <tbody>
           {Object.values(getValue).map((data: any, index: number,) => (
-
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
           ))}
           </tbody>
 
