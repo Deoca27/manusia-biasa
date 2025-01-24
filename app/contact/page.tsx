@@ -121,6 +121,7 @@ export default function ContactPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.7, delay: 0.5 }}
+        className="mt-12 text-center bg-white p-8 rounded-2xl shadow-lg"
         >
 
         </motion.div>
