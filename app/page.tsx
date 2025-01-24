@@ -69,7 +69,7 @@ export default function RootPage() {
                   priority
                 />
               </div>
-              <div>
+              <div className="p-3">
                 {/* nama barang */}
                 <h2>{data.nama_barang}</h2>
                 {/* deskripsi */}
