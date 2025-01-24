@@ -74,7 +74,7 @@ export default function AdditemPage() {
                         setKategori(e.target.value);
                     }}
                 >
-                    <option value={""} disabled selected >Pilih kategori Elektronik</option>
+                    <option value={""} disabled >Pilih kategori Elektronik</option>
                     <option value={"Handphone"}>Handphone</option>
                     <option value={"Komputer"}>Komputer</option>
                     <option value={"Laptop"}>Laptop</option>
