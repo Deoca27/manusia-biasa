@@ -73,7 +73,7 @@ export default function RootPage() {
                 {/* nama barang */}
                 <h2 className="text-lg font-semibold text-gray-800">{data.nama_barang}</h2>
                 {/* deskripsi */}
-                <p>{data.deskripsi}</p>
+                <p className="text-gray-600">{data.deskripsi}</p>
                 {/* harga */}
                 <p>{data.harga}</p>
                 {/* Tombol */}
