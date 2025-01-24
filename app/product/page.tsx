@@ -43,7 +43,7 @@ export default function ProductPage() {
           <option value={"Handphone"}>Handphone</option>
           <option value={"Komputer"}>Komputer</option>
           <option value={"Laptop"}>Laptop</option>
-          <option>TV</option>
+          <option value={"TV"}>TV</option>
           <option>Accesoris</option>
           <option>Console</option>
         </select>
