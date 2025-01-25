@@ -3,7 +3,7 @@
 export default function EditPage({ params }: { params: { link_product: string } }) {
 return(
     <>
-    <div className="">EDIT DATA BARANG</div>
+    <div className="text-center font-extrabold text-2xl">EDIT DATA BARANG</div>
     </>
 );
 
