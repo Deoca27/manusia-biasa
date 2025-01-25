@@ -83,6 +83,7 @@ export default function RootPage() {
                 <Link 
                 href={data.link_product || "#"}
                 target="_blank"
+                className="bg-blue-600"
                 >Kunjungi</Link>
               </div>
             </div>
