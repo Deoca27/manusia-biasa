@@ -14,9 +14,9 @@ export default function AboutPage() {
         {
             id: 2,
             name: "Rendika Yoga Pamungkas",
-            position: "Project Manager",
-            image: "/images/foto.png",
-            Instagram: "https://www.instagram.com/jhoshe_maechel?igsh=MWEwamx1ZmIyN2hueg==",
+            position: "Programmer",
+            image: "/images/rendika.jpeg",
+            Instagram: "https://www.instagram.com/rendikayp_teknokrat?igsh=cGhncTVqaWhubDUz&utm_source=qr",
         },
         {
             id: 3,
