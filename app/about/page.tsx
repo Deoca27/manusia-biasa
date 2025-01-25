@@ -8,7 +8,7 @@ export default function AboutPage() {
             id: 1,
             name: "Jhoshe Machael",
             position: "Project Manager",
-            image: "/images/foto.png",
+            image: "/images/jhoshe.jpeg",
             Instagram: "https://www.instagram.com/jhoshe_maechel?igsh=MWEwamx1ZmIyN2hueg==",
         },
         {
