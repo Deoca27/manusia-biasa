@@ -65,6 +65,7 @@ export default function ProductPage() {
         placeholder="Search" 
         className="input input-bordered w-full max-w-xs" 
         value={searchTerm}
+        onChange={handleSearchChange}
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
