@@ -3,7 +3,7 @@
 import { PrismaClient } from "@prisma/client";
 
 //buat variabel "prisma"
-const prisma = new PrismaClient ();
+const prisma = new PrismaClient();
 
 // buat fungsi untuk ambil data barang
 export async function getData(category: string | null = null) {
@@ -12,9 +12,9 @@ export async function getData(category: string | null = null) {
     where: {
       status: "Y",
       ...(category && { kategori: category }),
-    },   
+    },
   });
-  
+
   return barang;
 }
 
@@ -45,7 +45,7 @@ export const checkData = async (link_product: string) => {
 };
 
 // buat fungsi untuk simpan data 
-export const SaveData = async (image_url: string, nama_barang: string, deskripsi:string, harga:number, kategori:string, link_product:string) => {
+export const SaveData = async (image_url: string, nama_barang: string, deskripsi: string, harga: number, kategori: string, link_product: string) => {
   await prisma.tb_barang.create({
     data: {
       image_url: image_url,
@@ -71,20 +71,20 @@ export const detailData = async (link_product: string) => {
   return detail;
 }
 
-export const setUpdateData = async (link_product: string, nama_barang: string, deskripsi: string, harga:number, kategori:string ,link_product_old: string) => {
+export const setUpdateData = async (link_product: string, nama_barang: string, deskripsi: string, harga: number, kategori: string, link_product_old: string) => {
   // buat variabel
   // untuk ubah status data (Y >> T)
   await prisma.tb_barang.updateMany({
-      where: {
-        link_product: link_product_old,                    
-      },
-      data: {
-        link_product: link_product,
-        nama_barang: nama_barang,
-        harga: parseFloat(harga.toString()),
-        deskripsi: deskripsi,
-        kategori: kategori,
-      },
+    where: {
+      link_product: link_product_old,
+    },
+    data: {
+      link_product: link_product,
+      nama_barang: nama_barang,
+      harga: parseFloat(harga.toString()),
+      deskripsi: deskripsi,
+      kategori: kategori,
+    },
   });
 
 }
