@@ -45,7 +45,7 @@ export default function ProductPage() {
       <div className="flex justify-center">
         {/* Dropdown Kategori */}
         <select 
-        className="select select-bordered w-full max-w-xs"
+        className="select select-bordered w-full max-w-xs mr-3"
         value={selectedCategory || ""}
         onChange={handleCategoryChange}
         >
