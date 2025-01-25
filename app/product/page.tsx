@@ -8,6 +8,7 @@ export default function ProductPage() {
   //buat hook dengan "use  state"
   const [getValue, setValue] = useState<any[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
   // buat fungsi untuk panggil "getData" dengan filter kategori
   async function fetchData(category: string | null = null) {
