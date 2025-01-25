@@ -22,10 +22,16 @@ export default function ProductPage() {
     fetchData();
   }, []);
 
+  // Fungsi untuk mengubah kategori
   function handleCategoryChange(event: React.ChangeEvent<HTMLSelectElement>) {
     const category = event.target.value;
     setSelectedCategory(category);
     fetchData(category); // Ambil data berdasarkan kategori yang dipilih
+  }
+
+  // Fungsi untuk mengubah nilai search
+  function handleSearchChange(event: React.ChangeEvent<HTMLInputElement>) {
+    setSearchTerm(event.target.value);
   }
 
   return (
