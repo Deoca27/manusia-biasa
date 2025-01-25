@@ -42,7 +42,7 @@ export default function ProductPage() {
   return (
     <div>
       <title>Product</title>
-      <div className="text-center">
+      <div className="flex justify-center">
         {/* Dropdown Kategori */}
         <select 
         className="select select-bordered w-full max-w-xs"
