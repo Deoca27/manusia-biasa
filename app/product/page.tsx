@@ -70,7 +70,7 @@ export default function ProductPage() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
         {/* menampilkan data barang */}
-        {getValue.map((data: any, index: number) => (
+        {filteredData.map((data: any, index: number) => (
           <div
             key={index}
             className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
