@@ -1,5 +1,6 @@
 "use client";
 
+import { Link } from "lucide-react";
 import { useState } from "react";
 
 export default function EditPage({ params }: { params: { link_product: string } }) {
@@ -27,7 +28,13 @@ export default function EditPage({ params }: { params: { link_product: string } 
                 </select>
                 <input type="text" placeholder="link product" className="input input-bordered col-start-4 col-span-4" />
 
-
+                {/* tombol */}
+                <button className="btn col-end-7">
+                    Simpan
+                </button>
+                <Link href={"/admin/item_controller"} className="btn btn-neutral">
+                    Batal
+                </Link>
             </div>
 
         </>
