@@ -80,7 +80,9 @@ export default function RootPage() {
                 {/* harga */}
                 <p className="text-base font-medium text-blue-500">Rp {data.harga.toLocaleString("id-ID")}</p>
                 {/* Tombol */}
-                <Link href={"/"}>Kunjungi</Link>
+                <Link 
+                href={data.link_product || "#"}
+                >Kunjungi</Link>
               </div>
             </div>
           ))}
