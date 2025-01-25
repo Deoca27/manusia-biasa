@@ -82,6 +82,7 @@ export default function RootPage() {
                 {/* Tombol */}
                 <Link 
                 href={data.link_product || "#"}
+                target="_blank"
                 >Kunjungi</Link>
               </div>
             </div>
