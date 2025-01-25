@@ -59,7 +59,10 @@ export default function RootPage() {
         <div className="grid grid-cols-4 gap-6">
           {/* tampilkan data barang */}
           {Object.values(getValue).map((data: any, index: number) => (
-            <div key={index}>
+            <div 
+            key={index}
+            className="bg-white"
+            >
               <div className="w-full aspect-square bg-gray-100 border-b border-gray-200 overflow-hidden">
                 <Image
                   src={data.image_url}
