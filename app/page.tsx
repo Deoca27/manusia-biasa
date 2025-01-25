@@ -60,7 +60,7 @@ export default function RootPage() {
           {/* tampilkan data barang */}
           {Object.values(getValue).map((data: any, index: number) => (
             <div key={index}>
-              <div className="w-full aspect-square bg-gray-100 border-b">
+              <div className="w-full aspect-square bg-gray-100 border-b border-gray-200">
                 <Image
                   src={data.image_url}
                   alt={data.nama_barang}
