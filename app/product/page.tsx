@@ -63,7 +63,7 @@ export default function ProductPage() {
         <input 
         type="text" 
         placeholder="Search" 
-        className="input input-bordered w-full max-w-xs" 
+        className="input input-bordered w-full max-w-xs ml-3" 
         value={searchTerm}
         onChange={handleSearchChange}
         />
