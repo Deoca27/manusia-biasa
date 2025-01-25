@@ -61,7 +61,7 @@ export default function RootPage() {
           {Object.values(getValue).map((data: any, index: number) => (
             <div 
             key={index}
-            className="bg-white border border-gray-200 rounded-lg shadow-md"
+            className="bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden"
             >
               <div className="w-full aspect-square bg-gray-100 border-b border-gray-200 overflow-hidden">
                 <Image
