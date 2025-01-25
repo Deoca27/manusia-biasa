@@ -21,9 +21,9 @@ export default function AboutPage() {
         {
             id: 3,
             name: "Deo Cahyo Anggoro",
-            position: "Project Manager",
-            image: "/images/foto.png",
-            Instagram: "https://www.instagram.com/jhoshe_maechel?igsh=MWEwamx1ZmIyN2hueg==",
+            position: "Programmer",
+            image: "/images/deo.jpeg",
+            Instagram: "https://www.instagram.com/deo_ca.tekno?igsh=MWNwNXpjZjlkYjF3Zg==",
         },
     ];
 
