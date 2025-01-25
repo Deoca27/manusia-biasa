@@ -34,6 +34,11 @@ export default function ProductPage() {
     setSearchTerm(event.target.value);
   }
 
+  // Filter data barang berdasarkan search term
+  const filteredData = getValue.filter((data) =>
+    data.nama_barang.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div>
       <title>Product</title>
