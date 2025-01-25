@@ -36,13 +36,6 @@ export default function RootPage() {
             </p>
           </div>
           <div className="w-1/2">
-            <div className="mb-6 text-right">
-              <input
-                type="text"
-                placeholder="Search products..."
-                className="input input-bordered w-full max-w-md pl-10"
-              />
-            </div>
             <Image
               src="/images/foto.png"
               alt="MacBook Pro 14"
