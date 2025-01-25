@@ -48,7 +48,11 @@ export default function ProductPage() {
           <option value={"Console"}>Console</option>
         </select>
         {/* Search */}
-        <input type="text" placeholder="Type here" className="input input-bordered w-full max-w-xs" />
+        <input 
+        type="text" 
+        placeholder="Search" 
+        className="input input-bordered w-full max-w-xs" 
+        />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
         {/* menampilkan data barang */}
