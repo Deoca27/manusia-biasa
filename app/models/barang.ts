@@ -58,3 +58,33 @@ export const SaveData = async (image_url: string, nama_barang: string, deskripsi
     },
   })
 }
+
+// buat fungsi untuk tampil detail data
+export const detailData = async (link_product: string) => {
+  // buat variabel
+  const detail = await prisma.tb_barang.findMany({
+    where: {
+      link_product: link_product,
+    },
+  });
+
+  return detail;
+}
+
+export const setUpdateData = async (link_product: string, nama_barang: string, deskripsi: string, harga:number, kategori:string ,link_product_old: string) => {
+  // buat variabel
+  // untuk ubah status data (Y >> T)
+  await prisma.tb_barang.updateMany({
+      where: {
+        link_product: link_product_old,                    
+      },
+      data: {
+        link_product: link_product,
+        nama_barang: nama_barang,
+        harga: parseFloat(harga.toString()),
+        deskripsi: deskripsi,
+        kategori: kategori,
+      },
+  });
+
+}
